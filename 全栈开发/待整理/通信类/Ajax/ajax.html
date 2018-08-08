@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ajax</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+	/*
+	Ajax原生方法基本思路--------XO(双if)OSS
+	
+	**原生ajax方法封装--处理不够细致严谨，建议结合jquery.ajax进行修改
+	1.实现对http头部信息的封装(区别Request和Response)
+		①默认情况发送（4A2CHR）
+		②自定义头部信息：setRequestHeader("name","value")---写在open之后send之前
+		③获取某个响应头部信息：getResponseHeader("name")
+		④获取所有头部信息：getAllResponseHeader()
+	2.xhr对象的兼容、属性、事件处理(区别XHR和AXO，status和readyState)
+		①XMLHttpRequest  VS   ActiveXObject("Microsoft.XMLHTTP")  
+		②responseText:响应主体被返回的文本
+		③responseXML:如果响应的内容类型是"text/xml"或"application/xml",这个属性中将保存包含着响应数据的XML DOM文档
+		④status：响应HTTP的状态码（1xx提示信息，2xx请求成功，3xx重定向，4xx客户端错误，5xx服务器错误）
+		⑤statusText：HTTP转态的说明(200请求成功,304服务器有缓存可用,403禁止访问,404页面错误)
+		⑥readyState：请求/响应过程的当前的活动阶段
+			0：未初始化，未调用open()
+			1:启动，调用open(),
+			2:发送,调用send(),
+			3:接受，已经接受部分响应数据
+			4：完成，已经接受全部响应数据，而且可用在客户端使用
+		⑦onreadystatechange：当readState的值发生变化时就会触发该事件
+	*/ 
+		function ajax(options){
+			/*
+			options说明
+				**var options = {
+					url:'请求url',
+					type:'请求类型，get/post',
+					async:'是否异步,false/true',
+					data:{
+						name:'键名',
+						value:'键值',
+						forms:[需要发送的数据所在DOM对象]
+					},
+					success: ajax成功发送后调用的方法,
+					error: ajax未成功发送后调用的方法r,
+				}
+			*/
+			
+			//申明XHR对象方法二：js高程写法：兼容IE7-，错误监控
+				/*
+					function createXHR(){
+						if(typeof XMLHttpRequest != "undefined"){
+							return new XMLHttpRequest();
+						}else if(typeof ActiveXObject != "undefined"){
+							if(typeof arguments.callee.activeXString != "String"){
+								var versions = ["MSXML2.XMLHttp.6.0","MSXML2.XMLHttp.3.0",
+												"MSXML2.XMLHttp"
+												],
+									i,len;
+								for(i=0,len=version.length;i < len;i++){
+									try{
+										new Activexobject(versions[i]);
+										arguments.callee.activeXstring = versions[i];
+										break;
+									}catch(ex){
+										//跳过	
+									}
+								}
+							}
+						return new ActiveXobject(arguments.callee.activeXString);	
+						}else{
+							throw new Error("NO XHR object available");
+						}
+					}
+					var xhr = createXHR();
+				*/
+			//实现向URL末尾添加查询字符串参数,每个字符串的名称和值都必须经过encodeURIComponent()进行编码
+			function addURLParam(url, name, value){
+				url += (url.indexOf("?") == -1 ? "?" : "&");
+				url += encodeURIComponent(name) + "=" + encodeURIComponent(value);
+				return url;
+			}
+			//表单序列化--serialize()
+			function serialize(form){
+				var parts = [],
+					field = null,
+					i,
+					len,
+					optLen,
+					option,
+					optValue;
+
+				for(i=0, len=form.elements.length; i < len; i++){
+					field = form.elements[i];
+					switch(field.type){
+						case "select-one":
+						case "select-multiple":
+
+							if(field.name.length){
+								for(j=0, optLen = field.options.length; j<opnLen; j++){
+									option = field.options[j];
+									if(option.selected){
+										optValue = "";
+										if(option.hasAttribute){
+											optValue = (option.hasAttribute("value") ? 
+												        option.value : option.text);
+										}else{
+											optValue = (option.attributes["value"].specified ?
+														option.value : option.text);
+										}
+										parts.push(encodeURIComponent(field.name) + "=" + 
+												   encodeURIComponent(optValue));
+									}
+								}
+							}
+							break;
+
+						case undefined:
+						case "file":
+						case "submit":
+						case "reset" :
+						case "button":
+							break;
+
+						case "radio":
+						case "checkbox":
+							if(!field.checked){
+								break;
+							}
+							/*执行默认操作*/
+
+						default:
+							//不包含没有名字的表单字段
+							if(field.name.length){
+								parts.push(encodeURIComponent(field.name) + "=" + 
+										   encodeURIComponent(field.value));
+							}
+					}
+				}
+				return parts.join("&");
+			}
+			if(options.url){
+				//声明对象，进行浏览器特征检查，考虑兼容性
+				var xhr = XMLHttpRequest ? new XMLHttpRequest : new window.ActiveXObject("Microsoft.XMLHTTP");
+
+				//指定onreadystatechange事件处理程序
+				xhr.onreadystatechange = function(){
+					if(xhr.readyState == 4){
+						if((xhr.status >= 200 && xhr.status <= 300) || xhr.status == 304){
+							options.success(JSON.parse( xhr.responseText ),xhr,xhr.status);
+						}else{
+							var errorInfo = xhr.status + ':' + xhr.statusText
+							options.error(errorInfo);
+						}
+					}
+				};
+
+				//判断请求类型
+				if(options.type.toUpperCase() === 'GET'){
+					xhr.open("get",options.url,options.async);
+					xhr.send(null);
+				}else if(options.type.toUpperCase() === 'POST'){
+					xhr.open("post",options.url,options.async);
+					if(options.data.forms.length){
+						xhr.send( new FormData(options.data.forms[0]) );
+					}else{
+						xhr.send(null);
+					}
+				}else{
+					console.log('no right type');
+				}
+			}
+
+		}
+		ajax({
+			url:'https://www.easy-mock.com/mock/5ab91674d2d0cf46a85b4f9c/example/ajax_raw',
+			type:'get',
+			async:true,
+			data:{
+				name:'username',
+				value:'fbx',
+			},
+			success(data,xhr,status){
+				console.log(data);
+				console.log(xhr);
+				console.log(status);
+			},
+			error(erroeInfo){
+				console.log(erroeInfo);
+			},
+		})
+	</script>
+</body>
+</html>

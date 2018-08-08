@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结构标签语义化</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <section class="advantage">
+        <h3>优点：</h3>
+        <p>1. 提升可访问性</p>
+        <p>2.便于SEO</p>
+        <P>3.结构清晰，利于维护</P>
+    </section>
+    <section class="new-element">
+        <h3>常用标签</h3>
+        <p class="header">
+            1.Header：可表示介绍内容的容器或者一组导航链接（可以是“网页”或任意“section”的头部部分）
+        </p>
+        <p class="nav">
+            2.Nav：标签的内容主要用于导航（整个页面主要导航部分）
+        </p>
+        <p class="acticle">
+            3.Article：标识页面中的主体内容，（文档，页面或者网站中自成一体的内容）
+        </p>
+        <p class="section">
+            4.Section：用来标记页面上重要的部分。该标记类似于将文档分为多个章节。
+        </p>
+        <p class="aside">
+            5.Aside：表示和页面主要内容相关，但不是页面的一部分，经常表示一个相关链接。（特殊的section，一般与article一起用）
+        </p>
+        <p class="footer">
+            6.Footer：和Header相对，表示文档或者章节的页脚，比如版权等信息放在此标记中
+        </p>
+        <p class="adress">
+            7.address：代表区块容器，必须是作为联系信息出现，邮编地址、邮件地址等等,一般出现在footer
+        </p>
+        <p class="hgroup">
+            8.hgroup：当元素有多个层级时，该元素可以将h1到h6元素放在其内,常用于有连续多个h1-h6标签
+        </p> 
+        <div class="attention">
+            <h3>acticle、section、div的区别</h3>
+            <p>自身独立的情况下：用article</p>
+            <p>是相关内容：用section</p>
+            <p>没有语义的：用div</p>
+        </div>
+    </section>
+    <a href="http://www.runoob.com/html/html5-new-element.html" class="more" target="_blank">--更多</a>
+</body>
+</html>

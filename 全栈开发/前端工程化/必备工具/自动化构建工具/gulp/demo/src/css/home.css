@@ -1,0 +1,10 @@
+.container {
+  margin: 0;
+  padding: 0; }
+  .container .header {
+    width: 200px;
+    background-color: #666; }
+  .container .main {
+    display: flex; }
+  .container .footer {
+    text-align: center; }

@@ -1,0 +1,24 @@
+1.调试---生成Source Maps
+---提供了一种对应编译文件和源文件的方法，使得编译后的代码可读性更高，也更容易调试
+---在webpack.config.js配置devtool选项
+注意：对小到中型的项目中，eval-source-map是一个很好的选项，但你只应该开发阶段使用它，在生产阶段则一定不要启用这个选项；cheap-module-eval-source-map方法构建速度更快，但是不利于调试，推荐在大型项目考虑时间成本时使用
+---详解Webpack中的sourcemap：https://segmentfault.com/a/1190000008315937
+
+？？chrome怎么用
+
+2.使用webpack构建本地服务器
+--安装webpack-dev-server
+--在webpack.config.js配置devServer选项（注意驼峰式写法）
+--在package.json中的scripts对象中添加如下命令，用以开启本地服务器
+"server": "webpack-dev-server --open"
+
+3.Loaders
+--在module里配置rules
+--条件匹配
+--应用规则
+--重置顺序
+
+babel-loader要配置的选项太多，开发者通常把babel的配置选项放在一个单独的名为 ".babelrc" 的配置文件，webpack会自动调用.babelrc里的babel配置选项
+--（windows不允许空文件名，可以将文件命名为.babelrc.，会自动保存为.babelrc文件）
+
+

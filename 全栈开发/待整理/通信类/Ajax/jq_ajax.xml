@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<success>xml文件成功返回</success>
+	<name>fbx</name>
+	<age>22</age>
+</root>
+<!-- 
+	xml文件的格式、
+		①文档声明，放在第一行
+		②唯一根元素，包含所有元素
+			元素=标签+属性+内容
+				表示：<标签名 属性名='属性值'>内容</标签名> 
+-->
+

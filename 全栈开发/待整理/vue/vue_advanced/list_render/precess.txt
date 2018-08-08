@@ -1,0 +1,7 @@
+1.理清文件结构及其功能
+--  index.html--首页，负责页面渲染和文件导入，类似入口文件
+    style.css,
+    index.js,
+    input.js,
+    list.js
+2.

@@ -1,0 +1,12 @@
+gulp API : gulp.task,gulp.src,gulp.dest,gulp.watch
+https://www.gulpjs.com.cn/docs/api/
+
+http://javascript.ruanyifeng.com/tool/gulp.html
+
+https://www.jianshu.com/p/803ee662f3d2
+
+建议命令使用cnpm
+
+全局安装gulp是为了执行gulp任务，本地安装gulp则是为了调用gulp插件的功能
+
+gulp和grunt的区别：https://www.cnblogs.com/931298654yy/p/6016169.html

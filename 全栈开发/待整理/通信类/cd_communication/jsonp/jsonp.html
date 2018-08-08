@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jsonp实现跨域通信</title>
+	<link rel="stylesheet" href="">
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<section class="static">
+		<span>静态加载</span>
+		<script>
+			function handleResponse(response){
+				console.log(response);
+			}		
+		</script>
+		<script src="https://api.douban.com/v2/book/search?q=javascript&count=1&callback=handleResponse"></script>
+	</section>
+	<br>
+	<section class="dynamic">
+		<button id="dynamic">动态加载</button>
+		<script>
+			function handleResponse1(response){
+				console.log(response);
+			}
+			$('#dynamic').click(function(){
+				var script = document.createElement('script');
+				script.src = "https://api.douban.com/v2/book/search?q=javascript&count=1&callback=handleResponse1"
+				document.body.insertBefore(script,document.body.firstChild);
+			});
+		</script>
+	</section>
+	<br>
+	<section class="jquery_jsonp">
+		<button id="jquery_jsonp">jQuery封装JSONP</button>
+		<script>
+			function handleResponse2(response){
+				console.log(response);
+			}
+			$('#jquery_jsonp').click(function(){
+				$.ajax({
+					async:true,
+					url:"https://api.douban.com/v2/book/search",
+					type:'GET',
+					dataType:'jsonp',
+					data:{
+						q:"javascript",
+						count:1
+					},
+					jsonp : 'callback', //指定一个查询参数名称来覆盖默认的 jsonp 回调参数名 callback
+					jsonpCallback: 'handleResponse2',//设置回调函数名
+					success(response, status, xhr){
+						console.log('状态为：' + status + ',状态是：' + xhr.statusText);
+					}
+
+				})
+
+				/**
+				*利用$.getJSON()
+				$.getJSON("https://api.douban.com/v2/book/search?q=javascript&count=1&callback=?", function(data){
+                console.log(data);
+           		});
+				*/
+			})
+		</script>
+	</section>
+</body>
+</html>

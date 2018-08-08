@@ -1,0 +1,14 @@
+.container{
+    margin: 0;
+    padding: 0;
+    .header{
+        width:200px;
+        background-color: #666;
+    }
+    .main{
+        display:flex;
+    }
+    .footer{
+        text-align:center;
+    }
+}

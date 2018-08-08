@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>计算属性_vue基础</title>
+		<link rel="stylesheet" href="">
+		<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+	</head>
+	<body>
+		<h2>当表达式过长或逻辑太复杂，计算属性便是第一选择</h2>
+		<section class="base">
+			<h3>基本用法</h3>
+			<div class="use">
+				<p>计算属性包括getters和setters:</p>
+				<section id="showname">
+					<p>firstName: {{firstName}}</p>
+					<p>lastName: {{lastName}}</p>
+					<label for="fullName">fullName: </label>
+					<input type="text" id="fullName" v-model="fullName">
+				</section>
+			</div>
+			<div class="default-use">
+				<p>开发时不常用使用setters，常用默认的模式:</p>
+				<section id="remsg">
+					<p>message: {{message}}</p>
+					<p>reversedMessage: {{reversedMessage}}</p>
+				</section>
+			</div>
+		</section>
+		<section class="advanced">
+			<h3>高级进阶</h3>
+			<div class="compare">
+				<p>1.computed VS methods</p>
+				<section id="compare">
+					<input type="text" v-model='computedNow'>
+					<p>计算属性-now: {{computedNow}}</p>
+
+					<!-- 这里是方法,要带() -->
+					<p>方法-now: {{methodsNow()}}</p>
+				</section>
+			</div>
+			<div class="dependothercompute">
+				<p>2.计算属性可以依赖其他的计算属性</p>
+				<section id="cart">
+					<p>米饭订单: {{shop1Price}}</p>
+					<p>手撕鸡饭订单: {{shop2Price}}</p>
+					<p>所有订单总金额：{{totalPrice}}</p>
+				</section>
+			</div>
+			<div class="dependotherexample">
+				<p>3.计算属性可以依赖其他实例的数据</p>
+			</div>
+		</section>
+	</body>
+	<style>
+		h2{
+			color:#f00;
+		}
+	</style>
+	<script>
+		let app1 = new Vue({
+			el: '#showname',
+			data: {
+				firstName: 'Keyleen',
+				lastName: 'He'
+			},
+			computed: {
+				fullName: {
+					get(){
+						return this.firstName + ' ' + this.lastName
+					},
+					set(newValue){
+						let names = newValue.split(' ')
+						this.firstName = names[0]
+						this.lastName = names[names.length-1]
+					}
+				}
+			}
+		})
+		let app2 = new Vue({
+			el: '#remsg',
+			data: {
+				message: 'u ssim i'
+			},
+			computed: {
+				reversedMessage(){
+					return this.message.split('').reverse().join('')
+				}
+			}
+
+		})
+		new Vue({
+			el: '#compare',
+			data: {
+				time: 'Now is '
+			},
+			computed: {
+				computedNow(){
+					let date = new Date()
+					return this.time + date
+				}
+			},
+			methods: {
+				methodsNow: function(){
+					let date = new Date()
+					return this.time + date
+				}
+			}
+		})
+		new Vue({
+			el: '#cart',
+			data: {
+				shoplist: [{
+						id: 0,
+						name:'猪脚饭',
+						price: 10,
+						num: 10
+					}, {
+						id: 1,
+						name: '手撕鸡饭',
+						price: 12,
+						num: 5
+					}
+				]
+			},
+			computed: {
+				shop1Price(){
+					return this.shoplist[0].price*this.shoplist[0].num
+				},
+				shop2Price(){
+					return this.shoplist[1].price*this.shoplist[1].num
+				},
+				totalPrice(){
+					return this.shop1Price + this.shop2Price
+				}
+			}
+		})
+	</script>
+</html>

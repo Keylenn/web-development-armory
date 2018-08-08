@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>我是新窗口</title>
+	<link rel="stylesheet" href="">
+	<script>
+		var obj = {
+			name:'fbx',
+			age:22
+		}
+		//postMessage.html的url是由anywhere构建的
+		window.opener.postMessage(obj,'http://10.12.120.217:8000/postMessag.html');
+		window.addEventListener('message',function(e){
+			if(e.origin != 'http://10.12.120.217:8000'){
+				return
+			}
+			console.log(e);
+			console.log(e.origin);
+			console.log(e.data);
+			console.log(e.source);
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

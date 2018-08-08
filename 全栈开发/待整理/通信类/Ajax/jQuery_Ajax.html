@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JQuery Ajax</title>
+	<link rel="stylesheet" href="">
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<script>
+		/**
+		*jQuery.ajax(url,[settings])---不常用（一般用于需要操作不常用的选项）
+			url:规定发送请求的 URL。默认是当前页面
+
+			type:规定请求的类型（GET 或 POST）
+
+			data:规定要发送到服务器的数据
+
+			success(result,status,xhr):当请求成功时运行的函数
+
+			error(xhr,status,error):如果请求失败要运行的函数。
+
+			async:布尔值，表示请求是否异步处理。默认是 true。
+
+			contentType:发送数据到服务器时所使用的内容类型。默认是："application/x-www-form-urlencoded"
+
+			dataType:预期的服务器响应的数据类型,xml, html, script, json,jsonp, text, _default
+
+			...
+		*/
+
+
+
+		/**
+		*jQuery.get(url, [data], [callback], [type])---常用
+			url:待载入页面的URL地址，必需
+
+			data:待发送 Key/value 参数
+
+			callback(response,status,xhr):载入成功时回调函数
+
+			type:返回内容格式，xml, html, script, json, text, _default
+		*/
+		
+
+
+		/**
+		*jQuery.post(url, [data], [callback], [type])---常用
+			url:发送请求地址。
+
+			data:待发送 Key/value 参数。
+
+			callback:发送成功时回调函数。
+
+			type:返回内容格式，xml, html, script, json, text, _default。
+		*/
+	</script>
+
+	<article class="responseType">
+		<section class="xml">
+			<div class="xml_container">
+				<button id="returnXml">返回xml格式内容</button>
+			</div>
+			<script>
+				$('#returnXml').click(function(){
+					$.get('jq_ajax.xml',
+						function (xml){
+							$(xml).find('root').each( function (){
+								var children = $(this).children(),
+									arr = [],
+									obj = {};
+
+								// 把返回的xml文本放到数组中
+								for(let i = 0; i < children.length; i++){
+									arr.push(children.eq(i).text());
+								}
+								console.log(arr);
+
+								// 把返回的xml文本放到对象中
+								for(let i = 0; i < children.length; i++){
+									let objName = children.eq(i)[0].nodeName 
+									obj[objName] = children.eq(i).text();
+								}
+								console.log( obj );
+							} )
+						},'xml')
+				})
+			</script>
+		</section>
+		<br>
+		<section class="html">
+			<div class="html_container">
+				<button id="returnHtml">返回html格式内容</button>
+				<div id="div1"></div>
+				
+			</div>
+			<script> 
+				$('#returnHtml').click(function() {
+					$.get('jq_ajax.html',
+						function (html){	
+							/*
+								返回整个html页面
+								$('#div1').html(html);
+							*/
+
+							/**
+							*返回部分页面内容
+							*/
+							
+							//包装数据
+							var object = $("<code></code>").append($(html));
+							// 获取对应数据块和内容
+							var $html = $(".info", object);
+							var value = $html.html(); 
+							$('#div1').html(value);
+						},'html')
+				});
+			</script>
+		</section>
+		<br>
+		<section class="json">
+			<div class="json_container">
+				<button id="returnJson">返回json格式的内容</button>
+			</div>
+			<script>
+				$('#returnJson').click(function(){
+					$.get('https://www.easy-mock.com/mock/5ab91674d2d0cf46a85b4f9c/example/ajax_json',
+						function (json){
+							console.log(json);
+						},'json')
+				})
+			</script>
+		</section>
+	</article>
+	<br>
+</body>
+</html>

@@ -1,0 +1,7 @@
+https://segmentfault.com/a/1190000007136269
+
+超级笔记本--p19 by myself
+
+？？
+①当目标窗口是window.frames
+②兼容ie

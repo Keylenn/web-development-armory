@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>域A</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type=”text/javascript”> 
+		var b_iframe = parent.parent.document.getElementById(”b_iframe”); 
+		var hash_url = window.location.hash; 
+		var hash_width = hash_url.split(”#”)[1].split(”|”)[0]+”px”; 
+		var hash_height = hash_url.split(”#”)[1].split(”|”)[1]+”px”; 
+		b_iframe.style.width = hash_width; 
+		b_iframe.style.height = hash_height; 
+	</script> 
+</body>
+</html>

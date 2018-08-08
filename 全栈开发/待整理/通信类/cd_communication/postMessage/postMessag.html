@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>源窗口</title>
+	<link rel="stylesheet" href="">
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<section class="window">
+		<button id="window">打开新窗口跨域交换数据</button>
+		<script>
+			$('#window').click(function(){
+				// 打开新窗口window.open()
+				var newWindow = window.open('http://127.0.0.1:8081/newWindow.html')
+				window.addEventListener('message',function(e){//message事件，消息被触发时运行函数
+					if(e.origin == 'http://127.0.0.1:8081'){
+						newWindow.postMessage('hello,newWindow',e.origin);
+						console.log(e);
+						console.log(e.origin);
+						//新窗口传回的数据
+						console.log(e.data);
+						console.log(e.source);
+					}
+				});
+			});	
+		</script>
+	</section>
+	
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>域B</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type=”text/javascript”> 
+		var b_width = Math.max(document.documentElement.clientWidth,document.body.clientWidth); 
+		var b_height = Math.max(document.documentElement.clientHeight,document.body.clientHeight); 
+		var c_iframe = document.getElementById(”c_iframe”); 
+		c_iframe.src = c_iframe.src+”#”+b_width+”|”+b_height; //http://www.jb51.net/c.html#width|height”
+		} 
+	</script> 
+
+	<iframe id=”c_iframe” height=”0″ width=”0″ src=”http://www.A.com/c.html” style=“display：none” ></iframe>
+	<br>
+	<!-- –js读取b.html的宽和高,把读取到的宽和高设置到和a.html在同一个域的中间代理页面车c.html的src的hash里面 -->
+</body>
+</html>

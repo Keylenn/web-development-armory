@@ -1,0 +1,20 @@
+https://segmentfault.com/a/1190000006178770
+
+通过终端操作常见问题：
+1.若webpack非全局安装，需使用node_modules\.bin\webpack app/main.js public/bundle.js命令
+
+2.提示需要安装webpack-cli：cnpm i -D webpack-cli
+
+3.若找不到bundle.js(Can't resolve 'public/bundle.js'),可以加上--output指定出口，node_modules\.bin\webpack app/main.js -o  public/bundle.js
+
+
+通过配置文件来使用Webpack
+
+1.若webpack非全局安装，可以在package.json中的script中配置 "start": "webpack"，因为package.json中的script会安装一定顺序寻找命令对应位置，本地的node_modules/.bin路径就在这个寻找清单中，所以无论是全局还是局部安装的Webpack，你都不需要写前面那指明详细的路径了
+
+---------------------------------分割线--------------------------------
+Webpack——解决疑惑,让你明白：https://www.jianshu.com/p/dcb28b582318
+
+
+
+

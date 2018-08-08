@@ -1,0 +1,21 @@
+http://javascript.ruanyifeng.com/nodejs/npm.html#toc8
+npm--包管理工具（node.js）
+
+初始化:npm init-->生成package.json文件（提供包的描述）--
+npm init -y 生成默认文件
+
+安装包:npm install = npm i -->生成node_modules文件夹，用于存放安装包
+--参数1： --save = -S -->将安装包信息记录在package.json的dependencies字段(运行时依赖)
+--参数2：--save-dev = -D -->将安装包信息记录在package.json的devDependencies字段（开发时的依赖）
+
+卸载包：npm uninstall
+
+安装包的相关描述: package.json
+--一个包即一个文件，package.json以json格式存储该包的相关描述
+--json文件不能有注释
+--name：包的名字，respository：包存放的仓库地址，
+  keywords：包的关键字（方便搜索），license：遵循的协议
+  maintainers：包的维护者，author：包的作者，version：版本号
+  dependencies：包依赖的其他包，devDependencies：包开发阶段所依赖的包
+  homepage：包的官方主页....
+
