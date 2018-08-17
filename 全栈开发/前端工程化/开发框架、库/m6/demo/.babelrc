@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    "transform-class-properties", // class static 静态语法支持
+    "transform-decorators-legacy", // es7 @注解
+    "transform-runtime"
+  ]
+}

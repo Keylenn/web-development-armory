@@ -1,0 +1,10 @@
+{
+  "banners": [
+    "./image/dog-1.jpg",
+    "./image/dog-2.jpg",
+    "./image/dog-3.jpg",
+    "./image/dog-4.jpg",
+    "./image/dog-6.jpg",
+    "./image/dog-8.jpg"
+  ]
+}

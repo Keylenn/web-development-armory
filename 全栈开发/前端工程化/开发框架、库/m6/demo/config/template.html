@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Based on the M6 framework">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title><%= htmlWebpackPlugin.options.title || 'APP of M6' %></title>
+    <link rel="icon" href="<%= htmlWebpackPlugin.options.favicon || './image/favicon.ico' %>" type="image/x-icon">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/boot-in.css">
+    <script type="text/javascript" src="./lib/boot-in.min.js"></script>
+    <!--<script type="text/javascript" charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>-->
+    <style>
+      .boot-in-mask-private {
+      <% if (htmlWebpackPlugin.options.loadImage) { %>
+      background: url("./image/<%= htmlWebpackPlugin.options.loadImage %>") 0 0 no-repeat / cover;
+        <% } %>
+      }
+    </style>
+  </head>
+  <body>
+  <div id="M6BootInMask" class="boot-in-mask boot-in-mask-private">
+    <div class="boot-in-mask-foot">
+      <div class="m6-an-apollo-wave">
+        <div class="m6-an-apollo-wave-left m6-an-apollo-wave-left-an"></div>
+        <div class="m6-an-apollo-wave-right m6-an-apollo-wave-right-an"></div>
+      </div>
+    </div>
+  </div>
+  <span id="M6BootInContent" class="hidden"><%= htmlWebpackPlugin.options.BCFG %></span>
+  <div id="root" class="m6-blur"></div>
+  <div id="react-portal"></div>
+  </body>
+</html>

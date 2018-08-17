@@ -1,0 +1,8 @@
+[
+  {"KIND":"05", "CODE":"01","DETAIL":"汉族","SPELL":"HZ"},
+  {"KIND":"05", "CODE":"02","DETAIL":"蒙古族","SPELL":"MGZ"},
+  {"KIND":"05", "CODE":"03","DETAIL":"回族","SPELL":"HZ"},
+  {"KIND":"05", "CODE":"04","DETAIL":"藏族","SPELL":"ZZ"},
+  {"KIND":"05", "CODE":"05","DETAIL":"维吾尔族","SPELL":"WWE"},
+  {"KIND":"05", "CODE":"06","DETAIL":"苗族","SPELL":"MZ"}
+]

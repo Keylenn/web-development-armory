@@ -1,0 +1,310 @@
+.i-m6 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0.2em
+}
+
+.im6-blue-sprite, .im6-blue-add-f, .im6-blue-add, .im6-blue-arrow-down-f, .im6-blue-arrow-down, .im6-blue-arrow-left-f, .im6-blue-arrow-left, .im6-blue-arrow-right-f, .im6-blue-arrow-right, .im6-blue-arrow-up-f, .im6-blue-arrow-up, .im6-blue-at, .im6-blue-calendar, .im6-blue-camera-f, .im6-blue-camera, .im6-blue-chat, .im6-blue-close, .im6-blue-cloud-d, .im6-blue-cloud, .im6-blue-dict, .im6-blue-dot, .im6-blue-download-d, .im6-blue-download, .im6-blue-edit, .im6-blue-exit, .im6-blue-filter, .im6-blue-focus, .im6-blue-good, .im6-blue-history-f, .im6-blue-loading, .im6-blue-location, .im6-blue-login, .im6-blue-m, .im6-blue-menu-f, .im6-blue-more, .im6-blue-phone, .im6-blue-quote, .im6-blue-refresh, .im6-blue-search, .im6-blue-selected-1-d, .im6-blue-selected-1, .im6-blue-selected-2-d, .im6-blue-selected-2, .im6-blue-setting-f, .im6-blue-setting, .im6-blue-share, .im6-blue-tasks-f, .im6-blue-tasks, .im6-blue-toggle-d, .im6-blue-toggle, .im6-blue-trash-f {
+  background-image: url('../image/im6-blue.png');
+  background-repeat: no-repeat
+}
+
+.im6-blue-add-f {
+  background-position: 0 -2264px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-add {
+  background-position: 0 -1112px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-arrow-down-f {
+  background-position: 0 -56px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-arrow-down {
+  background-position: 0 -104px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-arrow-left-f {
+  background-position: 0 -152px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-arrow-left {
+  background-position: 0 -200px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-arrow-right-f {
+  background-position: 0 -248px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-arrow-right {
+  background-position: 0 -296px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-arrow-up-f {
+  background-position: 0 -344px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-arrow-up {
+  background-position: 0 -392px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-at {
+  background-position: 0 -440px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-calendar {
+  background-position: 0 -488px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-camera-f {
+  background-position: 0 -536px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-camera {
+  background-position: 0 -584px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-chat {
+  background-position: 0 -632px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-close {
+  background-position: 0 -680px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-cloud-d {
+  background-position: 0 -728px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-cloud {
+  background-position: 0 -776px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-dict {
+  background-position: 0 -824px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-dot {
+  background-position: 0 -872px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-download-d {
+  background-position: 0 -920px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-download {
+  background-position: 0 -968px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-edit {
+  background-position: 0 -1016px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-exit {
+  background-position: 0 -1064px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-filter {
+  background-position: 0 -2216px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-focus {
+  background-position: 0 -1160px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-good {
+  background-position: 0 -1208px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-history-f {
+  background-position: 0 -1256px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-loading {
+  background-position: 0 -1304px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-location {
+  background-position: 0 -1352px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-login {
+  background-position: 0 -1400px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-m {
+  background-position: 0 -1448px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-menu-f {
+  background-position: 0 -1496px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-more {
+  background-position: 0 -1544px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-phone {
+  background-position: 0 -1592px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-quote {
+  background-position: 0 -1640px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-refresh {
+  background-position: 0 -1688px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-search {
+  background-position: 0 -1736px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-selected-1-d {
+  background-position: 0 -1784px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-selected-1 {
+  background-position: 0 -1832px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-selected-2-d {
+  background-position: 0 -1880px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-selected-2 {
+  background-position: 0 -1928px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-setting-f {
+  background-position: 0 -1976px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-setting {
+  background-position: 0 -2024px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-share {
+  background-position: 0 -2072px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-tasks-f {
+  background-position: 0 -2120px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-tasks {
+  background-position: 0 -2168px;
+  height: 48px;
+  width: 48px
+}
+
+.im6-blue-toggle-d {
+  background-position: 0 -28px;
+  height: 28px;
+  width: 48px
+}
+
+.im6-blue-toggle {
+  background-position: 0 0;
+  height: 28px;
+  width: 48px
+}
+
+.im6-blue-trash-f {
+  background-position: 0 -2312px;
+  height: 48px;
+  width: 48px
+}

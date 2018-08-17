@@ -1,0 +1,33 @@
+{
+  "list|10": [
+    {
+      "systemId": "@id",
+      "user": {
+        "headIcon|1": [
+          "http://dwz.sh/My4sb", "http://dwz.sh/uaq6", "http://dwz.sh/Wljrl",
+          "http://dwz.sh/6tZN", "http://dwz.sh/Wljrl", "http://dwz.sh/rCQ90",
+          "http://dwz.sh/V4nq", "http://dwz.sh/hBzT", "http://dwz.sh/V3QeB"
+        ],
+        "name": "@cname",
+        "ID": "@guid"
+      },
+      "publishText": "@cparagraph(1, 4)",
+      "publishContent|0-1": {
+        "type1": {
+          "type": 1,
+          "images|1-6": ["@dataImage('200x100', 'Mock Image!')"]
+        },
+        "type2": {
+          "pre": "@title(20)"
+        }
+      },
+      "publishTime": "@datetime('M月d日')",
+      "publishFrom": "@city(true)",
+      "count": {
+        "share|1-50": 50,
+        "chat|1-20": 20,
+        "good|1-200": 200
+      }
+    }
+  ]
+}

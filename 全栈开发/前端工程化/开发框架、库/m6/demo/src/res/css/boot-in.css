@@ -1,0 +1,41 @@
+.boot-in-mask {
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0
+}
+
+.boot-in-mask .boot-in-mask-foot {
+  position: absolute;
+  z-index: auto;
+  left: 0;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  opacity: .75
+}
+
+.hidden {
+  display: none
+}
+
+.show {
+  display: block
+}
+
+.visibility {
+  visibility: visible
+}
+
+.invisibility {
+  visibility: hidden
+}
+
+.m6-blur {
+  -webkit-filter: url(../image/blur.svg#blur);
+  filter: url(../image/blur.svg#blur);
+  -webkit-filter: blur(10px);
+  filter: blur(10px)
+}
