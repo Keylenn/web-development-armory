@@ -1,8 +1,0 @@
-[
-  {"KIND":"01", "CODE": "0", "DETAIL": "未知的性别", "SPELL": "WZDXB"},
-  {"KIND":"01", "CODE": "1", "DETAIL": "男", "SPELL": "N"},
-  {"KIND":"01", "CODE": "2", "DETAIL": "女", "SPELL": "NV"},
-  {"KIND":"01", "CODE": "3", "DETAIL": "女性改为男性", "SPELL": "NXGWNX"},
-  {"KIND":"01", "CODE": "4", "DETAIL": "男性改为女性", "SPELL": "NXGWNX"},
-  {"KIND":"01", "CODE": "5", "DETAIL": "未说明的性别", "SPELL": "WSMDXB"}
-]
