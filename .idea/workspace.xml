@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40a665cb-9ed4-4d6a-8cb0-f0bf57536a4a" name="Default Changelist" comment="" />
+    <list default="true" id="40a665cb-9ed4-4d6a-8cb0-f0bf57536a4a" name="Default Changelist" comment="通过webstorm操作git">
+      <change afterPath="$PROJECT_DIR$/project/react/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/.idea/react.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/registerServiceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -43,12 +64,40 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="518372704">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="webDevelopmentArmory-master" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,141 +108,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/m6/demo/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/accord/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/align-text/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/align-text/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ansi-cyan/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ansi-red/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ansi-wrap/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/arr-diff/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/arr-flatten/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/arr-union/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/array-slice/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/asap/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/asn1/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/assert-plus/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/asynckit/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/aws-sign2/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/aws4/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/bcrypt-pbkdf/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/camelcase/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/caseless/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/center-align/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/cliui/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/clone/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/co/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/combined-stream/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/convert-source-map/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/dashdash/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/decamelize/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/delayed-stream/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ecc-jsbn/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/errno/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/extend/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/extsprintf/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/fast-json-stable-stringify/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/forever-agent/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/form-data/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/fs.realpath/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/getpass/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/glob/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/graceful-fs/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/gulp-less/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/har-schema/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/har-validator/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/http-signature/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/image-size/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/indx/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/inflight/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/is-buffer/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/is-typedarray/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/isstream/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/jsbn/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/json-schema/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/json-stringify-safe/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/jsprim/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lazy-cache/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/less/node_modules/source-map/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/less/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/less/test/import-module/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.clone/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.defaults/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.flatten/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.merge/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.partialright/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.pick/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.uniq/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/longest/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/mkdirp/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/oauth-sign/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/once/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/path-is-absolute/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/path-parse/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/performance-now/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/plugin-error/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/promise/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/prr/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/punycode/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/repeat-string/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/replace-ext/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/request/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/baz/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/browser_field/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/dot_main/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/dot_slash_main/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/incorrect_main/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/right-align/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/semver/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/source-map/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/sshpk/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/through2/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/tough-cookie/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/tunnel-agent/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/tweetnacl/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/uglify-js/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/uglify-to-browserify/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/uuid/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/verror/node_modules/extsprintf/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/verror/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/vinyl-sourcemaps-apply/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/when/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/window-size/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/wordwrap/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/wrappy/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/xtend/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/project/react/my-app/package.json" />
       <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/package.json" />
       <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/构建、打包/模块打包工具/webpack/demo/package.json" />
       <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/构建、打包/模块打包工具/webpack/demo02/package.json" />
@@ -213,37 +130,59 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="webDevelopmentArmory-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory-master" type="462c0819:PsiDirectoryNode" />
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webDevelopmentArmory-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory-master" type="462c0819:PsiDirectoryNode" />
-              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="webDevelopmentArmory-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory-master" type="462c0819:PsiDirectoryNode" />
-              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
-              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="git&#9;ACTION&#9;Git.ContextMenu" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -268,6 +207,7 @@
       <option name="presentableId" value="Default" />
       <updated>1535003031989</updated>
       <workItem from="1535003034256" duration="836000" />
+      <workItem from="1535188466750" duration="138000" />
     </task>
     <task id="LOCAL-00001" summary="通过webstorm操作git">
       <created>1535003673422</created>
@@ -280,19 +220,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="836000" />
+    <option name="totallyTimeSpent" value="974000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
-      <window_info id="Favorites" sideWeight="0.502008" side_tool="true" visible="true" weight="0.24968314" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.24968314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.24925596" />
       <window_info id="Structure" order="1" sideWeight="0.5013477" side_tool="true" weight="0.24968314" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" visible="true" weight="0.32884097" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32884097" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32884097" />
+      <window_info id="Favorites" order="2" sideWeight="0.502008" side_tool="true" weight="0.24968314" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -300,6 +235,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3266564" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32819724" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32819724" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -307,6 +247,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -344,6 +310,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
