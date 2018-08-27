@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40a665cb-9ed4-4d6a-8cb0-f0bf57536a4a" name="Default Changelist" comment="通过webstorm操作git">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="40a665cb-9ed4-4d6a-8cb0-f0bf57536a4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -78,22 +80,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="md" value="1" />
+          <entry key="eslintrc" value="2" />
+          <entry key="js" value="1" />
+          <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="72" />
+          <entry key="md" value="95" />
+          <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="72" />
+          <entry key="PLAIN_TEXT" value="107" />
         </counts>
       </usages-collector>
     </session>
@@ -103,25 +110,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
+            <state relative-caret-position="112">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -130,16 +135,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.js" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/project/react/my-app/node_modules" />
     <handled-path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
@@ -300,6 +314,51 @@
               <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
               <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
+              <item name="react全家桶" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
+              <item name="react全家桶" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
+              <item name="react全家桶" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="高阶组件" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -319,7 +378,12 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -345,7 +409,7 @@
       <updated>1535003031989</updated>
       <workItem from="1535003034256" duration="836000" />
       <workItem from="1535188466750" duration="138000" />
-      <workItem from="1535333748049" duration="474000" />
+      <workItem from="1535333748049" duration="1701000" />
     </task>
     <task id="LOCAL-00001" summary="通过webstorm操作git">
       <created>1535003673422</created>
@@ -354,11 +418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535003673422</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加README.md">
+      <created>1535334282597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1535334282597</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1448000" />
+    <option name="totallyTimeSpent" value="2675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -369,14 +440,14 @@
       <window_info id="Favorites" order="2" sideWeight="0.502008" side_tool="true" weight="0.24968314" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3266564" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32819724" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32614556" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32819724" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -418,7 +489,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="通过webstorm操作git" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过webstorm操作git" />
+    <MESSAGE value="添加README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加README.md" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/必备工具/版本控制工具/git/git VS svn.txt">
@@ -452,17 +524,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="51" lean-forward="true" selection-start-column="51" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
