@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a665cb-9ed4-4d6a-8cb0-f0bf57536a4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project/react/my-app/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/待整理/js高级技巧/表单验证/url.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/待整理/js高级技巧/表单验证/validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/待整理/通信类/dataManipulation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,8 +71,10 @@
     <session id="268184690">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -81,26 +85,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="eslintrc" value="2" />
-          <entry key="js" value="1" />
+          <entry key="js" value="6" />
+          <entry key="json" value="1" />
           <entry key="md" value="2" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="6" />
+          <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="js" value="97" />
           <entry key="md" value="95" />
-          <entry key="txt" value="12" />
+          <entry key="txt" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="JavaScript" value="97" />
+          <entry key="PLAIN_TEXT" value="141" />
         </counts>
       </usages-collector>
     </session>
@@ -110,11 +118,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state>
+              <caret column="41" selection-start-column="41" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project/react/my-app/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://D:/develop/project/react/higher-order-component/src/wrapWithAjaxData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,6 +168,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.js" />
         <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md" />
+        <option value="$PROJECT_DIR$/project/react/my-app/src/App.js" />
       </list>
     </option>
   </component>
@@ -159,135 +191,6 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/project/react/my-app/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/accord/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/align-text/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/align-text/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ansi-cyan/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ansi-red/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ansi-wrap/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/arr-diff/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/arr-flatten/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/arr-union/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/array-slice/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/asap/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/asn1/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/assert-plus/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/asynckit/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/aws-sign2/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/aws4/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/bcrypt-pbkdf/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/camelcase/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/caseless/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/center-align/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/cliui/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/clone/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/co/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/combined-stream/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/convert-source-map/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/dashdash/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/decamelize/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/delayed-stream/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/ecc-jsbn/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/errno/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/extend-shallow/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/extend/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/extsprintf/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/fast-json-stable-stringify/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/forever-agent/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/form-data/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/fs.realpath/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/getpass/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/glob/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/graceful-fs/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/gulp-less/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/har-schema/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/har-validator/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/http-signature/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/image-size/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/indx/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/inflight/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/is-buffer/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/is-typedarray/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/isstream/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/jsbn/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/json-schema/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/json-stringify-safe/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/jsprim/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/kind-of/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lazy-cache/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/less/node_modules/source-map/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/less/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/less/test/import-module/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.clone/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.defaults/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.flatten/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.merge/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.partialright/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.pick/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/lodash.uniq/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/longest/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/mkdirp/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/oauth-sign/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/once/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/path-is-absolute/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/path-parse/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/performance-now/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/plugin-error/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/promise/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/prr/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/punycode/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/repeat-string/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/replace-ext/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/request/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/baz/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/browser_field/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/dot_main/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/dot_slash_main/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/resolve/test/resolver/incorrect_main/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/right-align/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/semver/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/source-map/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/sshpk/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/through2/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/tough-cookie/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/tunnel-agent/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/tweetnacl/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/uglify-js/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/uglify-to-browserify/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/uuid/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/verror/node_modules/extsprintf/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/verror/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/vinyl-sourcemaps-apply/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/when/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/window-size/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/wordwrap/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/wrappy/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/xtend/package.json" />
-      <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules/yargs/package.json" />
       <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/package.json" />
       <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/构建、打包/模块打包工具/webpack/demo/package.json" />
       <path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/构建、打包/模块打包工具/webpack/demo02/package.json" />
@@ -314,51 +217,6 @@
               <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
               <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
-              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
-              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
-              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
-              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
-              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
-              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
-              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
-              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
-              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
-              <item name="react全家桶" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
-              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
-              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
-              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
-              <item name="react全家桶" type="462c0819:PsiDirectoryNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
-              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
-              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
-              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
-              <item name="react全家桶" type="462c0819:PsiDirectoryNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="高阶组件" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -369,19 +227,22 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="git&#9;ACTION&#9;Git.ContextMenu" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="D:/develop/project/platform02" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\hejilun\AppData\Roaming\npm\node_modules\eslint" />
-    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.standard" value="C:\Users\hejilun\AppData\Roaming\npm\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\keyleen\webDevelopmentArmory\全栈开发\待整理\js高级技巧" />
+      <recent name="D:\keyleen\webDevelopmentArmory\全栈开发\待整理\通信类" />
       <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app" />
     </key>
   </component>
@@ -409,7 +270,8 @@
       <updated>1535003031989</updated>
       <workItem from="1535003034256" duration="836000" />
       <workItem from="1535188466750" duration="138000" />
-      <workItem from="1535333748049" duration="1701000" />
+      <workItem from="1535333748049" duration="7764000" />
+      <workItem from="1535416676919" duration="2740000" />
     </task>
     <task id="LOCAL-00001" summary="通过webstorm操作git">
       <created>1535003673422</created>
@@ -425,14 +287,28 @@
       <option name="project" value="LOCAL" />
       <updated>1535334282597</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加高阶组件 HoC.md">
+      <created>1535335540260</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1535335540260</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除my-app下的.eslintrc">
+      <created>1535335592431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535335592431</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2675000" />
+    <option name="totallyTimeSpent" value="11478000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.24904943" />
@@ -490,7 +366,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="通过webstorm操作git" />
     <MESSAGE value="添加README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加README.md" />
+    <MESSAGE value="添加高阶组件 HoC.md" />
+    <MESSAGE value="删除my-app下的.eslintrc" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除my-app下的.eslintrc" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/必备工具/版本控制工具/git/git VS svn.txt">
@@ -517,13 +395,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -531,16 +403,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/.eslintrc" />
     <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -548,6 +411,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/待整理/通信类/dataManipulation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/待整理/js高级技巧/表单验证/url.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/待整理/js高级技巧/表单验证/validate.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/develop/project/react/higher-order-component/src/wrapWithAjaxData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
