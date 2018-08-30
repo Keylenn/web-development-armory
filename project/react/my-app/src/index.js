@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {Demo01withHeader,
-        Demo02withDynamicTitleHeader,
-        Demo03withPropertyAgency} from './hoc/View'
+import {Demo, Demo1, Demo2, Demo3, Demo4, Demo5} from './hoc/stateless/View'
 
 import registerServiceWorker from './registerServiceWorker';
 
 const Index = () => {
   return (
     <div>
-      <Demo01withHeader />
-      <Demo02withDynamicTitleHeader />
-      <Demo03withPropertyAgency />
+      <Demo />
+      <Demo1 />
+      <Demo2 />
+      <Demo3 />
+      <Demo4 />
+      <Demo5 />
     </div>
   );
 }
