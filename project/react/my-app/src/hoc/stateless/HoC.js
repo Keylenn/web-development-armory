@@ -66,7 +66,8 @@ export {EnhanceWrapper, EnhanceWrapper1, EnhanceWrapper2, EnhanceWrapper3, Enhan
  2.√ 能否取到或操作原组件的props
         设置某个组件props，在使用组件时作为组件的属性（<WrappedComponent sex = "男" />）;
                            在使用组件时利用展开运算符...（<WrappedComponent {...props}/>）
-        获取某个组件的props，通过在该组件传参props获取，注意没有this，直接props
+        获取某个组件的props，在stateless组件中可通过在该组件传参props获取，注意没有this，直接props
+                             在class 组件中可通过this.props 获取
 
  3.乄 高阶组件能否取到或操作原组件的state
         高阶组件通过props给原组件传递一个回调函数，若修改，可将修改后的state作为返回值（changeChildState = ChildState => `${ChildState}_changeName`）

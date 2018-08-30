@@ -26,8 +26,8 @@ class Demo2 extends Component{
   render() {
     return (
       <div>
-        <div>Demo2_content---> {`name: ${this.state.name}`}</div>
-        <button onClick = {this.handleClickOnButton.bind(this)} >点击我通过高阶组件改变state的值</button>
+        <div>Demo2_content---> {`changeSelfStateName: ${this.state.name}`}</div>
+        <button onClick = {this.handleClickOnButton.bind(this)} >点击我通过高阶组件改变原组件state的值</button>
       </div>
   )
   }
