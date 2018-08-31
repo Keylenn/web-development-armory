@@ -67,7 +67,7 @@
 					$.get('jq_ajax.xml',
 						function (xml){
 							$(xml).find('root').each( function (){
-								var children = $(this).children(),
+								var WrappedComponentren = $(this).children(),
 									arr = [],
 									obj = {};
 

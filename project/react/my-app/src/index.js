@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {Demo, Demo1, Demo2, Demo3, Demo4, Demo5} from './hoc/stateless/View'
-import {Demo6, Demo7, Demo8, Demo9} from './hoc/class/View'
+import {Demo, Demo1, Demo2, Demo3, Demo4, Demo5} from './hoc/returnStateless/View'
+import {Demo6, Demo7, Demo8, Demo9, Demo10, Demo11, Demo12} from './hoc/returnClass/View'
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -24,6 +24,9 @@ const Index = () => {
         <Demo7 />
         <Demo8 />
         <Demo9 />
+        <Demo10 />
+        <Demo11 />
+        <Demo12 />
       </article>
     </div>
   );

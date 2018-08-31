@@ -20,7 +20,7 @@ class Demo2 extends Component{
     this.state = {name: 'demo2'}
   }
   handleClickOnButton() {
-    const newName = this.props.changeChildState(this.state.name)
+    const newName = this.props.changeWrappedComponentState(this.state.name)
     this.setState({name: newName})
   }
   render() {
@@ -37,7 +37,7 @@ Demo2 = EnhanceWrapper2(Demo2)
 //功能4：通过ref访问到原组件中的dom元素
 class Demo3 extends Component {
   handleClickOnButton() {
-    this.props.getChildRef(this.input)
+    this.props.getWrappedComponentRef(this.input)
   }
   render() {
     return (
@@ -66,7 +66,7 @@ console.log(Demo4.sayHi());
 
 //功能8：渲染劫持
 let Demo5 = (props) => {
-  return <div style={props.childStyle}>Demo5_content_render--->changeStyle</div>
+  return <div style={props.WrappedComponentStyle}>Demo5_content_render--->changeStyle</div>
 }
 Demo5 = EnhanceWrapper5(Demo5)
 

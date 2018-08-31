@@ -27,16 +27,16 @@ const EnhanceWrapper1 = WrappedComponent =>{
 }
 
 const EnhanceWrapper2 = WrappedComponent =>{
-  const changeChildState = ChildState => `${ChildState}_changeName`
-  const newProps = {changeChildState}
+  const changeWrappedComponentState = WrappedComponentState => `${WrappedComponentState}_changeName`
+  const newProps = {changeWrappedComponentState}
   const WrappingComponent = props => <WrappedComponent {...props} {...newProps}/>;
   WrappingComponent.displayName = `HOC_stateless(${getDisplayName(WrappedComponent)})`;
   return WrappingComponent;
 }
 
 const EnhanceWrapper3 = WrappedComponent =>{
-  const getChildRef = ChildRef => ChildRef.focus()
-  const newProps = {getChildRef}
+  const getWrappedComponentRef = WrappedComponentRef => WrappedComponentRef.focus()
+  const newProps = {getWrappedComponentRef}
   const WrappingComponent = props => <WrappedComponent {...props} {...newProps}/>
   WrappingComponent.displayName = `HOC_stateless(${getDisplayName(WrappedComponent)})`
   return WrappingComponent
@@ -51,7 +51,7 @@ const EnhanceWrapper4 = WrappedComponent =>{
 
 const EnhanceWrapper5 = WrappedComponent =>{
   const newProps = {
-    childStyle: {color: '#f00',fontSize: '25px'}
+    WrappedComponentStyle: {color: '#f00',fontSize: '25px'}
   }
   const WrappingComponent = props => <WrappedComponent {...props} {...newProps}/>
   WrappingComponent.displayName = `HOC_stateless(${getDisplayName(WrappedComponent)})`
@@ -70,12 +70,12 @@ export {EnhanceWrapper, EnhanceWrapper1, EnhanceWrapper2, EnhanceWrapper3, Enhan
                              在class 组件中可通过this.props 获取
 
  3.乄 高阶组件能否取到或操作原组件的state
-        高阶组件通过props给原组件传递一个回调函数，若修改，可将修改后的state作为返回值（changeChildState = ChildState => `${ChildState}_changeName`）
-        原组件将state作为参数传给回调，若修改，可通过触发setState修改（ this.setState({name: this.props.changeChildState(this.state.name)}) ）
+        高阶组件通过props给原组件传递一个回调函数，若修改，可将修改后的state作为返回值（changeWrappedComponentState = WrappedComponentState => `${WrappedComponentState}_changeName`）
+        原组件将state作为参数传给回调，若修改，可通过触发setState修改（ this.setState({name: this.props.changeWrappedComponentState(this.state.name)}) ）
 
  4.乄 能否通过ref访问到原组件中的dom元素
-        高阶组件通过props给原组件传递一个回调函数，若修改，可直接将修改操作作为返回值（getChildRef = ChildRef => ChildRef.focus()）
-        原组件通过给DOM元素设置ref属性，将其作为参数传给回调（ this.props.getChildRef(this.input) ）
+        高阶组件通过props给原组件传递一个回调函数，若修改，可直接将修改操作作为返回值（getWrappedComponentRef = WrappedComponentRef => WrappedComponentRef.focus()）
+        原组件通过给DOM元素设置ref属性，将其作为参数传给回调（ this.props.getWrappedComponentRef(this.input) ）
 
  5.X 是否影响原组件生命周期等方法：props无法更改，所以也不会影响到componentWillReceiveProps方法。
 
@@ -85,7 +85,7 @@ export {EnhanceWrapper, EnhanceWrapper1, EnhanceWrapper2, EnhanceWrapper3, Enhan
  7.X 能否劫持原组件生命周期：同5。
 
  8.乄 能否渲染劫持
-        高阶组件可以通过props来控制是否渲染及传入数据（newProps = {childStyle: {color: '#f00',fontSize: '25px'}}）
+        高阶组件可以通过props来控制是否渲染及传入数据（newProps = {WrappedComponentStyle: {color: '#f00',fontSize: '25px'}}）
         原组件通过获取props来劫持渲染，但对原组件内部render的控制并不是很强
  */
 
