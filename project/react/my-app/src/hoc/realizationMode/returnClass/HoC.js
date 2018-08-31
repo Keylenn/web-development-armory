@@ -88,7 +88,7 @@ const EnhanceWrapper4 = WrappedComponent => class WrppingComponent extends Compo
 
 const EnhanceWrapper5 = WrappedComponent => class WrappingComponent extends Component {
   static displayName = `HOC_class(${getDisplayName(WrappedComponent)})`
-  static sayHi = () => 'Hi! Demo' // sayHi = WrappedComponent.sayHi
+  static sayHi =  WrappedComponent.sayHi // () => 'Hi! Demo'
   render() {
     return <WrappedComponent {...this.props} />
   }

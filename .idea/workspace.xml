@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a665cb-9ed4-4d6a-8cb0-f0bf57536a4a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClassAfterExtends/HoC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClassAfterExtends/View.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/hoc/class/HoC.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/class/HoC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/hoc/class/View.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/class/View.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/hoc/stateless/HoC.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/stateless/HoC.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/hoc/stateless/View.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/stateless/View.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/hoc/returnClass/HoC.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClass/HoC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/hoc/returnClass/View.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClass/View.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/hoc/returnStateless/HoC.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnStateless/HoC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/hoc/returnStateless/View.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnStateless/View.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/react/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/全栈开发/待整理/通信类/Ajax/jQuery_Ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/全栈开发/待整理/通信类/Ajax/jQuery_Ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/logo.svg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,7 +91,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="eslintrc" value="2" />
-          <entry key="js" value="24" />
+          <entry key="js" value="35" />
           <entry key="json" value="1" />
           <entry key="md" value="5" />
           <entry key="txt" value="2" />
@@ -98,21 +100,22 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="24" />
+          <entry key="JavaScript" value="35" />
           <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="8778" />
+          <entry key="js" value="11750" />
           <entry key="md" value="95" />
-          <entry key="txt" value="134" />
+          <entry key="txt" value="144" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="8778" />
-          <entry key="PLAIN_TEXT" value="229" />
+          <entry key="JavaScript" value="11749" />
+          <entry key="PLAIN_TEXT" value="239" />
+          <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -122,23 +125,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/project/react/my-app/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+            <state relative-caret-position="1120">
+              <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/class/HoC.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -177,8 +171,13 @@
         <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/stateless/HoC.js" />
         <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/stateless/View.js" />
         <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/class/View.js" />
-        <option value="$PROJECT_DIR$/project/react/my-app/src/index.js" />
         <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/class/HoC.js" />
+        <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/returnStateless/View.js" />
+        <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/returnClass/HoC.js" />
+        <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/returnClass/View.js" />
+        <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/returnClassAfterExtends/View.js" />
+        <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/returnClassAfterExtends/HoC.js" />
+        <option value="$PROJECT_DIR$/project/react/my-app/src/index.js" />
       </list>
     </option>
   </component>
@@ -262,16 +261,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hoc" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="react" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hoc" type="462c0819:PsiDirectoryNode" />
-              <item name="stateless" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -296,13 +285,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app\src\hoc\stateless" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\keyleen\webDevelopmentArmory\全栈开发\待整理\js高级技巧" />
       <recent name="D:\keyleen\webDevelopmentArmory\全栈开发\待整理\通信类" />
       <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app\src\hoc\realizationMode" />
+      <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app\src\hoc\stateless" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -334,7 +324,7 @@
       <workItem from="1535503164739" duration="19000" />
       <workItem from="1535513975734" duration="7241000" />
       <workItem from="1535589060266" duration="29037000" />
-      <workItem from="1535676122796" duration="7657000" />
+      <workItem from="1535676122796" duration="22486000" />
     </task>
     <task id="LOCAL-00001" summary="通过webstorm操作git">
       <created>1535003673422</created>
@@ -392,21 +382,27 @@
       <option name="project" value="LOCAL" />
       <updated>1535623358974</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改文件夹名称&#10;完成返回class组件的HoC">
+      <created>1535684203389</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1535684203389</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55553000" />
+    <option name="totallyTimeSpent" value="70382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="1" width="1616" height="875" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.24904943" />
       <window_info id="Structure" order="1" sideWeight="0.5013477" side_tool="true" weight="0.24968314" />
       <window_info id="Favorites" order="2" sideWeight="0.502008" side_tool="true" weight="0.24968314" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32793522" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -483,7 +479,8 @@
     <MESSAGE value="新增HoC" />
     <MESSAGE value="新增返回stateless组件的HoC" />
     <MESSAGE value="新增返回class组件的HoC(未完成)" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增返回class组件的HoC(未完成)" />
+    <MESSAGE value="修改文件夹名称&#10;完成返回class组件的HoC" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改文件夹名称&#10;完成返回class组件的HoC" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/必备工具/版本控制工具/git/git VS svn.txt">
@@ -561,47 +558,64 @@
         <state relative-caret-position="-756" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/stateless/View.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="66" selection-start-line="66" selection-end-line="70" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/class/View.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/stateless/HoC.js">
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnStateless/HoC.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="55" column="66" lean-forward="true" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/class/HoC.js">
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnStateless/View.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="135" column="8" selection-start-line="135" selection-start-column="8" selection-end-line="135" selection-end-column="8" />
+        <state relative-caret-position="112">
+          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClass/View.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="92" column="75" lean-forward="true" selection-start-line="92" selection-start-column="75" selection-end-line="92" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClass/HoC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="89" column="71" lean-forward="true" selection-start-line="89" selection-start-column="71" selection-end-line="89" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClassAfterExtends/View.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="109" column="36" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClassAfterExtends/HoC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3419">
+          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1120">
+          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

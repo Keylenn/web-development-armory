@@ -53,7 +53,7 @@ Demo3 = EnhanceWrapper3(Demo3)
 
 //功能6：取到原组件static方法
 class Demo4 extends Component {
-  static sayHi = () => 'Hi! Demo'
+  static sayHi = () => 'Hi! Demo4'
   render() {
     return (
       <div> Demo4_content_static---> EnhanceWrapper4(Demo4).sayHi</div>

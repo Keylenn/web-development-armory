@@ -31,7 +31,7 @@ class Demo8 extends Component{
         <div>Demo8_content---> {`changeSelfStateName: ${this.state.name}`}</div>
         <button onClick = {this.handleClickOnButton.bind(this)} >点击我通过高阶组件改变原组件state的值</button>
     </div>
-  )
+    )
   }
 }
 Demo8 = EnhanceWrapper2(Demo8)
@@ -77,10 +77,10 @@ Demo10 = EnhanceWrapper4(Demo10)
 
 //功能6：取到原组件static方法
 class Demo11 extends Component {
-  static sayHi = () => 'Hi! Demo'
+  static sayHi = () => 'Hi! Demo11'
   render() {
     return (
-      <div> Demo11_content_static---> EnhanceWrapper4(Demo11).sayHi</div>
+      <div> Demo11_content_static---> EnhanceWrapper5(Demo11).sayHi</div>
     )
   }
 }
@@ -90,7 +90,7 @@ console.log(Demo11.sayHi());
 
 //功能8：渲染劫持
 let Demo12 = (props) => {
-  return <div style={props.WrappedComponentStyle}>Demo5_content_render--->changeStyle</div>
+  return <div style={props.WrappedComponentStyle}>Demo12_content_render--->changeStyle</div>
 }
 Demo12 = EnhanceWrapper6(Demo12)
 
