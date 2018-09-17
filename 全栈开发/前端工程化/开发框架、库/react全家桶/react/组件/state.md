@@ -46,9 +46,19 @@
        总结：考虑独立性，遵循“万不得已设state”原则
 
        代码：
-       this.state = {
-        idCardNo: ""
-       };
+        this.state = {
+         idCardNo: ""
+        };
+        let idCardNo = this.state.idCardNo;
+        let idCardInfo = {};
+        if (idCardNo.length === 15 || idCardNo.length === 18) {
+          idCardInfo = IdCard(this.state.idCardNo, "get"); //return {province,birthday,age,sex}
+        }
+        <p>身份证号：{this.state.idCardNo}</p>
+        <p>省份：{idCardInfo.province || ""}</p>
+        <p>出生日期：{idCardInfo.birthday || ""}</p>
+        <p>年龄：{idCardInfo.age || ""}</p>
+        <p>性别：{idCardInfo.sex || ""}</p>
 
 2.如何正确地修改state
 这里提到了正确，就说明有不正确的改法，如下
