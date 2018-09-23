@@ -5,6 +5,7 @@ import {Demo, Demo1, Demo2, Demo3, Demo4, Demo5} from './hoc/realizationMode/ret
 import {Demo6, Demo7, Demo8, Demo9, Demo10, Demo11, Demo12} from './hoc/realizationMode/returnClass/View'
 import {Demo13, Demo14, Demo15, Demo16, Demo17, Demo18, Demo19, Demo20} from "./hoc/realizationMode/returnClassAfterExtends/View";
 
+import Excel from './Excel'
 import registerServiceWorker from './registerServiceWorker';
 
 const Index = () => {
@@ -40,6 +41,7 @@ const Index = () => {
         <Demo19 />
         <Demo20 />
       </article>
+      <Excel />
     </div>
   );
 }

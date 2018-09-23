@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a665cb-9ed4-4d6a-8cb0-f0bf57536a4a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/props.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/Excel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project/react/my-app/src/importExcel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/实现方式/ReactComponent.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/实现方式/statelessComponent.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/React事件.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/React元素树.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/ref.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/static属性和方法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/生命周期.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/state.md" beforeDir="false" afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/state.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/react/my-app/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/project/react/my-app/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.md" beforeDir="false" afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/props.md" beforeDir="false" afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/props.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/state.md" beforeDir="false" afterPath="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/state.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -116,36 +131,40 @@
     <session id="-5683583">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.100" value="1" />
           <entry key="project.open.time.192" value="1" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.47" value="2" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="2" />
-          <entry key="md" value="1409" />
-          <entry key="txt" value="107" />
+          <entry key="md" value="1778" />
+          <entry key="txt" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="2" />
-          <entry key="Markdown" value="1409" />
-          <entry key="PLAIN_TEXT" value="107" />
+          <entry key="Markdown" value="1775" />
+          <entry key="PLAIN_TEXT" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="md" value="4" />
+          <entry key="js" value="2" />
+          <entry key="md" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="4" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Markdown" value="12" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -156,20 +175,25 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project/react/my-app/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="300">
+                <caret line="143" selection-start-line="143" selection-end-line="143" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.md">
+        <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/实现方式/ReactComponent.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2508">
-                <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+              <first_editor relative-caret-position="76">
+                <caret line="4" selection-start-line="4" selection-end-line="4" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -179,25 +203,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/state.md">
+        <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/实现方式/statelessComponent.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="248">
-                <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/props.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="299">
-                <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <first_editor relative-caret-position="38">
+                <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -248,9 +258,16 @@
         <option value="$PROJECT_DIR$/project/react/my-app/src/hoc/returnClassAfterExtends/HoC.js" />
         <option value="$PROJECT_DIR$/project/react/my-app/src/index.js" />
         <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.js小书笔记.md" />
-        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.md" />
-        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/state.md" />
         <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/props.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/state.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/vue全家桶/React事件.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/生命周期.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/ref.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/static属性和方法.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/React元素树.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/实现方式/ReactComponent.md" />
+        <option value="$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/实现方式/statelessComponent.md" />
       </list>
     </option>
   </component>
@@ -265,9 +282,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/全栈开发/前端工程化/必备工具/包管理工具/yarn/demo/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -297,6 +311,11 @@
             <path>
               <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
               <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
@@ -343,6 +362,35 @@
               <item name="react" type="462c0819:PsiDirectoryNode" />
               <item name="组件" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
+              <item name="react全家桶" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="组件" type="462c0819:PsiDirectoryNode" />
+              <item name="实现方式" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
+              <item name="react全家桶" type="462c0819:PsiDirectoryNode" />
+              <item name="react" type="462c0819:PsiDirectoryNode" />
+              <item name="高阶组件" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webDevelopmentArmory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webDevelopmentArmory" type="462c0819:PsiDirectoryNode" />
+              <item name="全栈开发" type="462c0819:PsiDirectoryNode" />
+              <item name="前端工程化" type="462c0819:PsiDirectoryNode" />
+              <item name="开发框架、库" type="462c0819:PsiDirectoryNode" />
+              <item name="vue全家桶" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -367,16 +415,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\front end\webDevelopmentArmory\全栈开发\前端工程化\开发框架、库\react全家桶\react\resources\imgs" />
-      <recent name="E:\front end\webDevelopmentArmory\全栈开发\前端工程化\开发框架、库\react全家桶\react\resources" />
-      <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app\src\hoc\realizationMode" />
-      <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app\src\hoc\stateless" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\keyleen\webDevelopmentArmory\全栈开发\待整理\js高级技巧" />
       <recent name="D:\keyleen\webDevelopmentArmory\全栈开发\待整理\通信类" />
       <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\front end\webDevelopmentArmory\全栈开发\前端工程化\开发框架、库\react全家桶\react\组件\组成" />
+      <recent name="E:\front end\webDevelopmentArmory\全栈开发\前端工程化\开发框架、库\react全家桶\react\组件" />
+      <recent name="E:\front end\webDevelopmentArmory\全栈开发\前端工程化\开发框架、库\react全家桶\react\resources\imgs" />
+      <recent name="E:\front end\webDevelopmentArmory\全栈开发\前端工程化\开发框架、库\react全家桶\react\resources" />
+      <recent name="D:\keyleen\webDevelopmentArmory\project\react\my-app\src\hoc\realizationMode" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -413,7 +462,9 @@
       <workItem from="1535799605136" duration="1900000" />
       <workItem from="1535875950186" duration="12844000" />
       <workItem from="1536400596217" duration="3917000" />
-      <workItem from="1536483113761" duration="4153000" />
+      <workItem from="1536483113761" duration="4837000" />
+      <workItem from="1537443385074" duration="25000" />
+      <workItem from="1537708831188" duration="3511000" />
     </task>
     <task id="LOCAL-00001" summary="通过webstorm操作git">
       <created>1535003673422</created>
@@ -499,28 +550,35 @@
       <option name="project" value="LOCAL" />
       <updated>1536418941229</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="完善state.md，新建props.md">
+      <created>1536502339796</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1536502339796</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94422000" />
+    <option name="totallyTimeSpent" value="98642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.18325792" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.26696834" />
       <window_info id="Structure" order="1" sideWeight="0.5013477" side_tool="true" weight="0.24968314" />
       <window_info id="Favorites" order="2" sideWeight="0.502008" side_tool="true" weight="0.24968314" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32793522" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32646593" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32884097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32488114" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32436708" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49936628" weight="0.054179568" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006337" side_tool="true" weight="0.32614556" />
       <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32819724" />
@@ -594,7 +652,8 @@
     <MESSAGE value="react.md 整理react学习笔记" />
     <MESSAGE value="新增react resources文件夹 添加了react.js小书笔记 和 图片" />
     <MESSAGE value="基本完成react.md  新增state.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="基本完成react.md  新增state.md" />
+    <MESSAGE value="完善state.md，新建props.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善state.md，新建props.md" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/必备工具/版本控制工具/git/git VS svn.txt">
@@ -645,16 +704,6 @@
     <entry file="file://D:/develop/project/react/higher-order-component/src/wrapWithAjaxData.js" />
     <entry file="file://D:/develop/project/react/higher-order-component/src/index.js" />
     <entry file="file://$PROJECT_DIR$/project/react/my-app/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project/react/my-app/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-756" />
@@ -695,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClassAfterExtends/HoC.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3419">
-          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/resources/react.js小书笔记.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -714,18 +756,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.md">
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/state.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2508">
-            <caret line="132" column="12" selection-start-line="132" selection-start-column="12" selection-end-line="132" selection-end-column="12" />
+          <first_editor relative-caret-position="248">
+            <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -733,10 +768,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/props.md">
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/props.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="299">
+          <first_editor relative-caret-position="361">
             <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           </first_editor>
           <second_editor>
@@ -745,11 +787,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/state.md">
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/生命周期.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="248">
-            <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
+          <first_editor relative-caret-position="376">
+            <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/React事件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-column="14" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/ref.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/static属性和方法.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/组成/React元素树.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/高阶组件/HoC.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/react/my-app/src/hoc/realizationMode/returnClassAfterExtends/HoC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="101" column="55" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/react.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="143" selection-start-line="143" selection-end-line="143" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/实现方式/ReactComponent.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="76">
+            <caret line="4" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/全栈开发/前端工程化/开发框架、库/react全家桶/react/组件/实现方式/statelessComponent.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="38">
+            <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
