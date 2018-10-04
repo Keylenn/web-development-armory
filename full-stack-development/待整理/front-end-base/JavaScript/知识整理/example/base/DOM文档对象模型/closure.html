@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闭包</title>
+	<style>
+		em{
+			color:red;
+			font-size:18px;
+		}
+		a{
+			text-decoration:none;
+			color:rgba(0,0,255,0.6);
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h3>闭包是什么</h3>
+		<h4>1.概念</h4>
+		<p>①闭包是指有权访问另一个<a href="#scope" name="b1" id="b1">函数作用域</a>中变量的<em>函数</em>--《JavaScript高级程序设计，第三版》</p>
+		<p>②当函数可以<em>记住并访问</em>所在的<a href="#scope" name="b1" id="b1">词法作用域</a>时，就产生了闭包，即使函数是在当前词法作用域之外执行--《你不知道的JavaScript》</p>	
+		<p>③闭包,名词，指的是<em>函数和引用环境</em>-->包含<a href="#variable"  name="b0" id="b0">自由变量</a>  的函数与为所有这些自由变量提供了变量绑定的环境一起，被称为闭包
+															--《Head First JavaScript》--推荐</p>
+
+		<p>综上所述，闭包无处不在，是基于代码书写时产生的自然结果，你只需要识别和拥有它，学会真正的使用闭包，或者说我们应该更关注闭包的使用（闭包的构建能产生什么效果），而不是纠结谁是闭包的问题，本质上，如果将函数当做第一级的值类型并到处传递，你就会看到闭包在这些函数中的应用，在定时器，事件监听器，AJAX请求，跨窗口通信，Web Workers等任务中，只要使用了<a href="#callback" name="b2" id="b2">回调函数</a>，实际上就是在使用闭包</p>
+
+		<h4>2.易错解析</h4>
+		<p>1）JS的函数都可以称为闭包？</p>
+		<script>
+			//从概念3可以看出，当函数f1定义的时候并没有自由变量，因此不能说是一个闭包
+			function f1(){
+				var a = "闭包是指函数和引用环境";
+				console.log( a );
+			}
+		</script>
+		<p>2）能够读取其他函数内部变量的函数就是闭包吗？</p>
+		<script>
+			//请问，这里的函数ff2是不是闭包？从理论上讲是的（ff2中有为自由变量a2提供绑定的环境），更有技术含量的解释是因为ff2()对a2的引用方法是词法作用域中的查找规则，而这规则正是闭包的非常重要的一部分；这样的闭包只能说产生了，但没有真正地达到效果，就像这段代码执行两次f2()，企图输出2,3，但结果都输出2，这样还不如直接用return ++a2呢因此这个闭包没啥实际用处
+			function f2(){
+				var a2=1;
+				function ff2(){
+					++a2
+					console.log(a2);
+				}
+				ff2();
+			}
+			f2();
+			f2();
+			</script>
+		<p>3）IIFE模式是典型的闭包例子？</p>
+		<script>
+			var a = 2;
+			(function IIFE(){
+				console.log( a );
+			})();
+			//观察上面的代码，思考：IIFE的确创建了闭包，而且常用来创建可以被封闭起来的闭包的工具，但是它本身并不会真的使用闭包。
+		</script>
+	</section><hr>
+	<section>
+	<h3>为什么要使用闭包</h3>
+	<p>1.即让外部可以读取函数内部的变量,又保护函数内的变量安全,加强了封装性</p>
+	<p>2.在内存中维持一个变量,防止被回收销毁</p>
+	<p>3. 逻辑连续，当闭包作为另一个函数调用的参数时，避免你脱离当前逻辑而单独编写额外逻辑。</p>
+
+	</section>
+	<hr>
+	<section>
+		<h3>怎么使用闭包</h3>
+		<h4>1.嵌套函数--闭包</h4>
+		<script>
+			//#闭包3
+			//那么怎么使上面的问题达到预期的效果呢？刚刚提到，可以直接返回++a2,那我们也可以直接返回函数的嘛，这是一个好办法。看代码，这里产生了闭包，闭包的效果达到了预期的效果。
+			//返回内嵌的匿名函数
+			function f3(){
+				var a3=1;
+				return function (){
+					++a3
+					console.log(a3);
+				}
+			}
+			var b3=f3();
+			b3();//2
+			b3();//3
+
+			/*
+			思考，这里产生的闭包能达到预期的效果吗？如果不行要怎么改？
+				function f3(){
+					var a3=1;
+					function ff3(){
+						++a3
+						console.log(a3);
+					}
+					b3(ff3);
+				}
+				function b3(fn){
+					fn();
+				}
+				f3();
+				f3();
+			 */
+		</script>
+		<h4>2.定时器和JQuey--闭包</h4>
+		<script>
+			//毫无疑问，这里产生了闭包，来看看闭包的产生的效果，在wait(..)执行1秒后，它的内部作用域并不会消失，因为内置的工具函数setTimeout(..)持有对参数timer的引用，简单来说，timer函数未被执行之前，wait函数不会被进行垃圾回收； 
+			function wait(message){
+				setTimeout(function timer1(){
+					console.log(message);
+				},1000);
+			}
+			 wait("hello closure");
+
+			// function setupBot(name,selector){
+			// 	$(selector).click(function activator(){
+			// 		console.log("Activating:"+name);
+			// 	});
+			// }
+			// setupBot("Closure Bot1","#bot_1");
+			// setupBot("Closure Bot2","#bot_2");
+		</script>
+		<h4>3.循环和闭包</h4>
+		<script>
+		//以下代码请分别执行
+			//我们想使用闭包，达到预期的效果--分别输出数字1——5，每秒一次，每次一个，然而当代码运行时，发现结果是以每秒一次的频率输出五次6，为什么呢？要解决这个问题，必须for循环的本质是什么？在这段代码中，i是被声明在全局的，一开始i=1，接着进行一次循环，每次循环产生一个定时器，也就是产生了五个定时器，然后i=6，不符合循环条件，循环结束，这时延迟函数回调才开始执行，结果就是每一秒输出5次6。
+				// for (var i=1; i<=5; i++){
+				// 	setTimeout(function timer2(){
+				// 		console.log(i);
+				// 	},i*1000);
+				// }
+			//如果延迟函数的回调在定时器产生时就被执行，不就可以想要达到预期效果了，考虑到IIFE会通过声明并立即执行一个函数来创建作用域，可以试一下，但结果还是以每秒一次的频率输出五次6，仔细思考不难发现，IIFE创建的是空作用域
+				// for (var i=1; i<=5; i++){
+				// 	(function(){
+				// 		setTimeout(function timer3(){
+				// 			console.log(i);
+				// 		},i*1000);
+				// 	})();
+				// }
+			//进一步想，我们只要把想要的值添加到IIFE创建的作用域,再输出想要的值不就行了，再来试试,行了没问题，我们终于使用闭包达到我们预期的效果了！
+				// for (var i=1; i<=5; i++){
+				// 	(function(){
+				// 		var j=i;
+				// 		setTimeout(function timer4(){
+				// 			console.log(j);
+				// 		},i*1000);
+				// 	})();
+				// }
+			// 改进上面代码
+				// for (var i=1; i<=5; i++){
+				// 	(function(j){
+				// 		setTimeout(function timer4(){
+				// 			console.log(j);
+				// 		},i*1000);
+				// 	})(i);
+				// }
+			//除了用IIFE这种工具来达到预期效果，还有其他办法吗？答案是有的，可以将块级作用域和闭包联合使用，这是一个好工具。
+				// for (var i=1; i<=5; i++){
+				// 		let j=i;//闭包的块作用域
+				// 		setTimeout(function timer5(){
+				// 			console.log(j);
+				// 		},i*1000);
+				// }
+				// 改进上面代码，在for循环头部的let声明会在每次迭代都被声明，随后的每个迭代都会使用上一个迭代结束时的值来初始化这个变量。
+				for (let i=1; i<=5; i++){
+						setTimeout(function timer5(){
+							console.log(i);
+						},i*1000);
+				}
+		</script>
+		<h4>4.<a href="#module">模块</a>--闭包</h4>
+		<h4>5.<a href="#throttle">函数节流</a>--闭包</h4>
+		<h4>6.闭包使用的注意点</h4>
+		<pre>
+			1）由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。
+			2）闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值。
+		</pre>
+	</section>
+	<hr>
+	<section>
+		<pre name="variable" id="variable">
+			全局变量：不是在函数体内创建的变量都是全局变量(global)
+			局部变量：在函数体内定义的变量和形参(local, formalParameter)
+			自由变量：不是在函数体内被定义的变量(freeVar)
+			var global;
+			function go( formalParameter ){
+				var local;
+				if ( freeVar ){
+					console.log( local );
+				}
+			}
+													<a href="#b0">返回</a>
+		</pre>
+		<pre name="scope" id="scope">
+			①作用域链：
+				函数内定义的变量在函数外不可见，但函数访问的变量既可以来自自身的作用域，又可以来自“父级作用域”，就形成了一条作用域链
+
+			②词法作用域：-- <em>通过阅读代码就能知道变量的作用域</em>
+				概念：作用域的一种工作模型，定义在词法阶段的作用域，是由你在写代码时将变量和块作用域写在哪里来决定的（例如：当定义了一个函数后，无论函数在哪里被调用，它的词法作用域都只由函数被声明时所处的位置决定的，请注意考虑声明提升）
+				
+				var scope = global;
+				function LexicalScope(){
+					var scope = local;
+					return ( scope );
+				}
+				LexicalScope();
+				当你调用函数时，返回的是local
+
+				欺骗词法：evel(),with,不建议使用（使用任何一个机制都将导致代码运行变慢）
+
+			③函数作用域：
+				属于这个函数的全部变量都可以在整个函数范围内使用及复用（事实上在嵌套的作用域中也可以使用）
+
+			④块作用域：
+				是函数和变量不仅可以属于所处的作用域，也可以属于某个代码块（通常指{...}内部） 
+													<a href="#b1">返回</a>
+													<a href="scope.html" target="_blank">更多</a>										
+		</pre>
+		<pre name="module" id="module">
+			模块：
+				特征1：为创建内部作用域而调用了一个包装函数
+				特征2：包装函数的返回值必须至少包括一个对内部函数的引用，这样就会创建涵盖整个包装函数内部作用域的闭包。
+													<a href="module.html" target="_blank">更多</a>
+		</pre>
+		<pre name="throttle" id="throttle">
+			函数节流：
+				概念：简单来说，就是让一个函数无法在很短的时间间隔内连续调用，只有
+				当上一次函数执行后过了你规定的时间间隔，才能进行下一次该函数的调用
+
+				原理：用定时器，当触发一个事件时，先setTimout让这个事件延迟一会再
+				执行，如果在这个时间间隔内又触发了事件，那我们就clear掉原来的定时
+				器，再setTimeout一个新的定时器延迟一会执行。
+													<a href="throttle.html" target="_blank">更多</a>
+		</pre>
+		<pre name="callback" id="callback">
+			回调函数
+				将函数作为参数传递给其他函数
+				节省全局变量，有助于根据需求调整代码，提升性能
+													<a href="#b2">返回</a>
+													<a href="callback.html" target="_blank">更多</a>	
+		</pre>
+	</section>
+
+</body>
+</html>

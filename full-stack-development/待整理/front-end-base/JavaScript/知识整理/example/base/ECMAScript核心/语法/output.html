@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javaScript输出数据的四种方式</title>
+	<script>
+
+		alert("使用 window.alert() 弹出警告框（一般省略window.）");
+
+		document.write("使用 document.write() 方法将内容写到 HTML 文档中");
+
+	
+
+	</script>
+</head>
+<body>
+	<p id="p1">我是段落，我用来测试JavaScript输出数据的方式</p>
+	<script>
+		document.getElementById("p1").innerHTML="使用 innerHTML 写入到 HTML 元素";
+
+		// var p1=document.getElmentById("p1");
+		// p1.innerHTML="使用 innerHTML 写入到 HTML 元素";
+
+		console.log("使用 console.log() 写入到浏览器的控制台")
+
+	</script>
+
+
+	
+</body>
+</html>

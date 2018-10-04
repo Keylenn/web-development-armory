@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base target="_blank">
+	<title>location对象</title>
+	<style>
+		em{
+			color:red;
+			font-size:18px;
+		}
+		a{
+			text-decoration:none;
+			color:rgba(0,0,255,0.6);
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h3>location是什么</h3>
+		<h4>1.概念</h4>
+		<p>location对象包含用户（在浏览器窗口中）访问过的 URL</p>
+		<h4>2.<a href="http://www.w3school.com.cn/jsref/dom_obj_location.asp">属性和方法</a></h4>
+		<h4>3.易错解析</h4>
+		<p>1）location是window对象的属性</p>
+	</section>
+	<hr>
+	<section>
+		<h3>为什么要使用location</h3>
+	</section>
+	<hr>
+	<section>
+		<h3>怎么使用location</h3>
+		<button id="currLocation">显示当前的URL</button>
+		<button id="newLocation">改变 URL</button>
+		<button id="assign1">加载新文档</button>
+		<button id="reload1">刷新（重新加载当前文档）</button>
+		<button id="replace1">用新的文档替换当前文档</button>
+		<script>
+			var currLocation=document.getElementById("currLocation");
+			var newLocation=document.getElementById("newLocation");
+			var assign1=document.getElementById("assign1");
+			var replace1=document.getElementById("replace1");
+			currLocation.onclick=function(){
+				console.log(location);
+			}
+			newLocation.onclick=function(){
+				location="http://www.w3school.com.cn:80/jsref/dom_obj_location.asp";
+			}
+			assign1.onclick=function(){
+				location.assign("http://www.w3school.com.cn/jsref/dom_obj_location.asp");
+			}
+			reload1.onclick=function(){
+				location.reload();
+			}
+			replace1.onclick=function(){
+				//replace() 方法不会在 History 对象中生成一个新的记录。当使用该方法时，新的 URL 将覆盖 History 对象中的当前记录。
+				location.replace("http://www.w3school.com.cn/jsref/dom_obj_location.asp");
+			}
+		</script>
+	</section>
+</body>
+</html>

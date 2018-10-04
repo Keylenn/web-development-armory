@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<base target="_blank">
+	<title>Window对象</title>
+	<style>
+		em{
+			color:red;
+			font-size:18px;
+		}
+		a{
+			text-decoration:none;
+			color:rgba(0,0,255,0.6);
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h3>什么是Window</h3>
+		<h4>1.概念</h4>
+		<p>BOM的核心对象是window，它表示浏览器的一个实例。在浏览器中，window对象有<em>双重角色</em>，它既是通过JavaScript访问浏览器窗口的一个接口，又是ECMAScript规定的Global对象。这意味着在网页中定义的任何一个对象、变量和函数，都以window作为其Global对象，因此有权访问parseInt()等内建方法</p>
+		<h4>2.<a href="http://www.w3school.com.cn/jsref/dom_obj_window.asp">集合、属性和方法</a></h4>
+		<h4>3.易错解析</h4>
+		<p>1）怎么理解window是ECMAScript规定的Global对象</p>
+		<pre>
+		所有 JavaScript 全局对象、函数以及变量均自动成为 window 对象的成员。
+		全局变量是 window 对象的属性。
+		全局函数是 window 对象的方法。
+		BOM的其他对象也是Window对象的一个属性
+		甚至 HTML DOM 的 document 也是 window 对象的属性之一：
+			window.document.getElementById("header");
+			与此相同：
+			document.getElementById("header");
+		</pre>
+		<p>2）全局变量和window属性没有区别吗？</p>
+		<pre>
+		定义全局变量与在window对象上直接定义属性还是有一点差别：全局变量不能通过delete操作符删除
+		，而直接在window对象上的定义的属性可以。
+
+		使用var语句添加的window属性有一个名为[[Configurable]]的特性，这个特性的值被设置为false，
+		因此这样定义的属性不可以通过delete操作符删除。IE8及更早版本在遇到使用delete删除window属
+		性的语句时，不管该属性最初是如何创建的，都会抛出错误，以示警告。IE9及更高版本不会抛出错
+		误。
+
+		另外，还要记住一件事：尝试访问未声明的变量会抛出错误，但是通过查询window对象，可以知道某
+		个可能未声明的变量是否存在。
+		</pre>
+		<script>
+			var age=29;
+			window.color="red";
+			delete window.age;
+			delete window.color;
+			console.log(window.age);//29
+			//console.log(color);//报错color is not defined，导致下面代码无法执行
+			console.log(window.color);//undefined
+		</script>
+	</section>
+	<hr>
+	<section>
+		<h3>为什么要使用Window</h3>
+		<p>一般来说，Window 对象的方法都是对浏览器窗口或框架进行某种操作。而 alert() 方法、confirm() 方法和 prompt 方法则不同，它们通过简单的对话框与用户进行交互。</p>
+	</section>
+	<hr>
+	<section>
+		<h3>怎么使用window</h3>
+		<h4>1.确定window尺寸（浏览器窗口的大小，浏览器的视口，不包括工具栏和滚动条）</h4>
+		<pre>
+		对于Internet Explorer、Chrome、Firefox、Opera 以及 Safari：
+			window.innerHeight - 浏览器窗口的内部高度
+			window.innerWidth - 浏览器窗口的内部宽度
+
+		对于 Internet Explorer 8、7、6、5：
+			document.documentElement.clientHeight
+			document.documentElement.clientWidth
+
+		或者
+			document.body.clientHeight
+			document.body.clientWidth
+		</pre>
+		<script>
+			//跨浏览器获得运行时窗口的大小
+			var w=window.innerWidth|| document.documentElement.clientWidth|| document.body.clientWidth;
+
+			var h=window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+			console.log("宽："+w+" 高:"+h);
+		</script>
+		<h4>2.常用方法</h4>
+		<p>1）window.open() - 打开新窗口、window.close() - 关闭当前窗口</p>
+		<p>请不要混淆方法 Window.open() 与方法 Document.open()，这两者的功能完全不同。为了使您的代码清楚明白，请使用 Window.open()，而不要使用 open()</p>
+		<button id="btn1">打开/关闭窗口</button>
+		<script>
+			var btn1=document.getElementById("btn1");
+			btn1.onclick=function(){
+				var newWindow=window.open("http://www.baidu.com")
+				setTimeout(function(){
+					var blean=confirm("你是否要关闭新打开的窗口？");
+					if(blean){
+						newWindow.close();
+					}
+				},5000)
+			}
+		</script>
+		<p>2)交互方法-- alert() 方法、confirm() 方法和 prompt 方法</p>
+		<button id="btn2">点击我</button>
+		<script>
+			var btn2=document.getElementById("btn2");
+			btn2.onclick=function(){
+				var text = window.prompt("输入你要弹出的内容！","Hello Window")
+				setTimeout(function(){
+					var blean=confirm("你是否要弹出刚刚输入的内容？");
+					if(blean){
+						if(text){
+							alert(text);
+						}
+						else{
+							alert("你点击了取消，没有输入！")
+						}
+						
+					}
+					else{
+						alert("你并不想弹出！");
+					}
+				},1000)
+			}
+		</script>
+		<p>3)焦点--focus()、blur()</p>
+		<input type="text" id="input1" placeholder="输入你的用户名">
+		<script>
+			var input1=document.getElementById("input1");
+			input1.focus();
+			setTimeout(function(){
+				input1.blur();
+			},2000);
+		</script>
+		<p>4窗口移动--moveTo()，调整窗口--resizeTo()</p>
+		<button id="move1">把窗口的左上角移动到一个指定的坐标</button><br><br>
+		<button id="resize1">把窗口大小调整为指定的宽度和高度</button>
+		<script>
+			//moveTo() 方法可把窗口的左上角移动到一个指定的坐标,出于安全方面的原因，浏览器限制此方法使其不能把窗口移出屏幕
+				var move1=document.getElementById("move1");
+				var handler=function(){
+					var myWindow=window.open('','','width=200,height=100');
+					setTimeout(function(){
+						myWindow.moveTo(200,200);
+					},2000);
+				}
+				move1.addEventListener('click',handler,false);
+			//resizeTo() 方法用于把窗口大小调整为指定的宽度和高度
+				var resize1=document.getElementById("resize1");
+				resize1.onclick=function(){
+					var myWindow=window.open('','','width=200,height=100');
+					setTimeout(function(){
+						myWindow.resizeTo(400,400);
+					},2000);
+				}
+		</script>
+		<p>5)<a href="timer.html">定时器</a></p>
+	</section>
+</body>
+</html>

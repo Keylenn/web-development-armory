@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML DOM对象</title>
+	<style>
+		a{
+			text-d
+		}
+	</style>
+</head>
+<body onkeyup="whichButton(event)">
+	<h3 id="h3">Document 对象</h3>
+	<h4>Document 对象属性</h4>
+	<button onmouseover="func(1)" onmouseout="func(2)">body属性</button>
+	<button onmouseover="func(3)" onmouseout="func(4)">cookie属性</button>
+	<button onmouseover="func(5)" onmouseout="func(6)">lastModified属性</button>
+	<button onmouseover="func(7)" onmouseout="func(8)">URL属性</button>
+	<script>
+		function func(n){
+			if(n===1){
+				document.body.style.backgroundColor="#666";
+			}
+			if(n===2){
+				document.body.style.backgroundColor="#fff";
+			}	
+			if(n===3){
+				var cki=document.createElement("p");
+				document.body.insertBefore(cki,document.body.childNodes[8])//在子节点前插入子节点	
+				cki.innerHTML=document.cookie;
+			}
+		 	if(n===4){
+				document.body.removeChild(document.body.childNodes[8]);
+			}
+			if(n===5){
+				var lmf=document.createElement("p");
+				document.body.insertBefore(lmf,document.body.childNodes[10])//在子节点前插入子节点	
+				lmf.innerHTML=document.lastModified;
+			}
+		 	if(n===6){
+				document.body.removeChild(document.body.childNodes[10]);
+			}
+			if(n===7){
+				var url=document.createElement("p");
+				document.body.insertBefore(url,document.body.childNodes[12])//在子节点前插入子节点	
+				url.innerHTML=decodeURI(document.URL);
+			}
+		 	if(n===8){
+				document.body.removeChild(document.body.childNodes[12]);
+			}
+		}
+	</script>
+	<hr>
+
+	<h3>Element 对象</h3>
+	<h4>attributes属性和childNodes属性</h4>
+	<div id="div1" class=" div1 div11 div111" style="width:200px;height: 100px;padding:50px; border:2px solid #666;"><a style="text-decoration:none;" href="http://www.cnblogs.com/yuteng/articles/1894578.html">高度和宽度</a></div>
+	<p>clientHeight、clientWidth的值由DIV内容的实际高度和CSS中的padding值决定</p>
+	<p>offsetHeight、offsetWidth的值由DIV内容的实际高度，CSS中的padding值，scrollbar的高度和DIV的border值决定</p>
+	<p>注意：CSS中的margin值，则不会影响clientHeight和offsetHeight的值</p>
+	<script>
+		var p1=document.getElementById("div1");
+		document.write("可见高度："+div1.clientHeight+"可见宽度："+div1.clientWidth+"<br>");
+		document.write("元素高度："+div1.offsetHeight+"元素宽度："+div1.offsetWidth+"<br>");
+		document.write("元素高度："+div1.scrollHeight+"元素宽度："+div1.scrollWidth);
+	</script>
+	<hr>
+
+	<h3>Attribute 对象</h3>
+	<hr>
+
+	<h3>Event 对象</h3>
+	<h4>哪个鼠标按钮被点击？</h4>
+	<p onmousedown="whichButton(event)" id="p1">请在文档中点击鼠标。文本内容会提示出您点击了哪个鼠标按键。</p>
+	<script type="text/javascript">
+		function whichButton(event){
+			var p1=document.getElementById("p1");
+			var btnNum = event.button;
+			if (btnNum==2){
+			  p1.innerHTML="您点击了鼠标右键！";
+			  }
+			else if(btnNum==0){
+			  p1.innerHTML="您点击了鼠标左键！";
+			  }
+			else if(btnNum==1){
+			  p1.innerHTML="您点击了鼠标中键！";
+			  }
+			else{
+			  p1.innerHTML="您点击了" + btnNum+ "号键，我不能确定它的名称。";
+			  }
+		}
+	</script>
+	<h4>光标的坐标是？</h4>
+	<p id="p2" onmousedown="show_coords(event)">请在文档中点击。文本内容会提示出鼠标指针的 (相对于屏幕的 )x 和 y 坐标。</p>
+	<script type="text/javascript">
+		function show_coords(event){
+			var p2=document.getElementById("p2");
+			var x1=event.clientX;
+			var y1=event.clientY;
+			var x2=event.screenX;
+			var y2=event.screenY;
+			p2.innerHTML="X 坐标: " + x1 + ", Y 坐标: "+ y1+" -----" +"相对于屏幕的X 坐标: " + x2 + ", 相对于屏幕的Y 坐标: " + y2;
+		}
+	</script>
+	<!-- <h4>被按的按键的 unicode 是？</h4>
+	<p><b>注释：</b>在测试这个例子时，要确保右侧的框架获得了焦点。</p>
+	<p id="p3">在键盘上按一个键。文本内容会提示出该按键的 unicode。</p>
+	<script type="text/javascript">
+		function whichButton(event){
+			var p3=document.getElementById("p3");
+			p3.innerHTML=event.keyCode;
+		}
+	</script>
+	<hr> -->
+</body>
+</html>

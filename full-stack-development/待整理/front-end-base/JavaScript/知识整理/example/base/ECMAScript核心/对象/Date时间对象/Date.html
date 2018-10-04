@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Date（日期）对象</title>
+	<script>
+		// 1.作用：日期对象用于处理日期和时间
+		
+		// 2.创建：四种方式初始化日期
+		// new Date() // 当前日期和时间
+ 		// new Date(milliseconds) //返回从 1970 年 1 月 1 日至今的毫秒数
+ 		// new Date(dateString)
+ 		// new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+ 		var today = new Date()
+ 		document.write(today+'<br>');
+ 		var d1 = new Date("October 13, 1975 11:13:00")
+ 		document.write(d1+'<br>');
+ 		var d2 = new Date(79,5,24)
+ 		document.write(d2+'<br>');
+ 		var d3 = new Date(79,5,24,11,33,0)
+ 		document.write(d3+'<br>');
+
+ 		// 2.设置日期
+ 		// ①setFullYear(年份,月份-1,日期)
+ 			var myDate1=new Date();
+ 			myDate1.setFullYear(2017,0,14);
+ 			document.write(myDate1+'<br>');//2017 年 1 月 14 日
+ 		// ②setDate(myDate.getDate()+天数）。几天后的日期，如果增加天数会改变月份或者年份，那么日期对象会自动完成这种转换
+ 			var myDate2=new Date();
+ 			myDate2.setDate(myDate2.getDate()+15);//2017 年 9 月 18 日的15天后
+ 			document.write(myDate2+'<br>');//2017 年 10 月 3 日
+
+ 		//3.把utc日期和时间转换成字符串
+		function myFunction1(){
+			var d = new Date();
+			var x = document.getElementById("demo1");
+			x.innerHTML=d.toUTCString();//UTC是世界标准时间（不再用GMT（格林尼治时间）），中国时间应是UTC+8的时差
+		}
+		//根据本地时间把 Date 对象的时间部分转换为字符串
+		function myFunction2(){
+			var d = new Date();
+			var x = document.getElementById("demo2");
+			x.innerHTML=d.toLocaleTimeString();
+		}
+
+		//4.在网页上显示一个简易钟表
+		function startTime(){
+			var today=new Date();
+			var h=today.getHours();
+			var m=today.getMinutes();
+			var s=today.getSeconds();// 在小于10的数字钱前加一个‘0’
+			m=checkTime(m);
+			s=checkTime(s);
+			document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+			t=setTimeout(function(){startTime()},800);//每等待0.8s调用一次startTime()
+
+			//t=setInterval(function(){startTime()},800);每隔0.8s调用一次startTime()
+			
+			//setTimeout(代码,等待的毫秒数) 只执行一次代码。如果要多次调用，请使用 setInterval() 或者让代码自身再次调用 setTimeout()
+		}
+		function checkTime(i){
+			if (i<10){
+				i="0" + i;
+			}
+			return i;
+		}
+		
+	</script>
+</head>
+<body onload="startTime()">
+		<p id="demo1">点击按钮把utc日期和时间转换成字符串。</p>
+		<button onclick="myFunction1()">点我</button>
+		<p id="demo2">点击按钮根据本地时间把 Date 对象的时间部分转换为字符串</p>
+		<button onclick="myFunction2()">点我</button>
+
+		<hr>
+		<div id="txt"></div>
+</body>
+</html>

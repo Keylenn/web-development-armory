@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javaScript--构造函数</title>
+	<style type="text/css">
+		em{
+			color:red;
+			font-size:18px;
+		}
+		a{
+			text-decoration:none;
+			color:rgba(0,0,255,0.7);
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h3>什么是构造函数</h3>
+		<h4>1.概念</h4>
+		<p>当任意一个普通函数用于创建一类对象时，它就被称作构造函数，或构造器。例如：new String(“a string”)，调用内置的String函数构造了一个字符串对象</p>
+		<p>一个函数要作为一个真正意义上的构造函数，需要满足下列条件：</p>
+		<pre>
+			1、 在函数内部对新对象（this）的属性进行设置，通常是添加属性和方法。
+			2、 构造函数可以包含返回语句（不推荐），但返回值必须是this，或者其它非对象类型的值。
+		</pre>
+		<p>一个构造函数在某些情况下完全可以作为普通的功能函数来使用，但是为了代码的可读性和可维护性，建议作为构造函数的函数不要掺杂除构造作用以外的代码；同样的，一般的功能函数也不要用作构造对象。</p>
+		<script>
+			function C2(a, b){
+			    this.p = a + b;
+			    this.sayP = function(){
+			        console.log(this.p);
+			    }
+			    return this.p;//此返回语句在C2作为构造函数时没有意义
+			}
+			var c2 = new C2(2,3); //此时C2才称为构造函数
+			c2.sayP();//5
+			console.log(C2(2, 3)); //5此时C2为普通函数
+		</script>
+		<h4>易错解析</h4>
+		<p>构造函数是怎么创建实例的？</p>
+		<pre>
+			//定义一个构造函数
+			function Person(name,age){
+				this.name=name;
+				this.age=age;
+				this.sayName=function(){
+					console.log(this.name);
+				}
+			}
+			//创建Person的实例person1、person2
+			var person1=new Person("Marry",15);
+			var person2=new Person("Marry",15);
+			/*
+				执行var person1=new Person("Marry",15);创建对象的时候，发生了<em>四件事情：</em>
+					var obj  ={};
+					obj.__proto__ = Person.prototype;
+					Person.call(obj);
+					return obj;//将obj的引用传递给实例
+
+				最重要的是第二步，将新生成的对象的__prop__属性赋值为构造函数的prototype属性，
+				使得通过构造函数创建的所有对象可以共享相同的原型。
+				这意味着同一个构造函数创建的所有对象都继承自一个相同的对象，因此它们都是同一个类的对象。
+				在JavaScript标准中，并没有__prop__这个属性
+				不过它现在已经是一些主流的JavaScript执行环境默认的一个标准属性，用于指向构造函数的原型。
+				该属性是默认不可见的，而且在各执行环境中实现的细节不尽相同，例如IE浏览器中不存在该属性。
+				我们只要知道JavaScript对象内部存在指向构造函数原型的指针就可以了，这个指针是在调用new表达式的时候自动赋值的，并且我们不应该去修改它。
+			 */
+			//<em>new后，实例有了自己的属性和方法,而且每个实例不相等</em>
+			console.log(person1===person2)//false
+			console.log(person1);//Person {name: "Marry", age: 15,sayName:(),__proto__:Object}
+			console.log(person2);//Person {name: "Marry", age: 15,sayName:(),__proto__:Object}
+			person1.sayName();//Marry
+			person2.sayName();//Bob
+
+			
+		</pre>
+	</section>
+	<hr>
+	<section>
+		<h3>为什么要使用构造函数</h3>
+		<p>自定义的函数将来可以将他的实例标识为一种特定的类型，因为它只知道自己从哪里来，通过谁产生的，这样可以减少内存资源的浪费</p>
+	</section>
+	<hr>
+	<section>	
+		<h3>怎么用构造函数</h3>
+		<h4>误解</h4>
+		<p>在new表达式中，起初始化对象作用的只能是<em>构造函数本身</em></p>
+		<p>按照面向对象的习惯性思维，我们说构造函数相当于“类”的定义，从而可能会认为constructor属性就是该类实际意义上的构造函数，在new表达式创建一个对象的时候，会直接调用constructor来初始化对象，那就大错特错了。new表达式执行的实际过程已经在上文中介绍过了（四个步骤），其中用于初始化对象的是第三步，调用的初始化函数正是“类函数”本身，而不是constructor。其实constructor属性是（构造函数指向的）原型对象的一个属性，默认用来指向用于创建该对象的引用</p>
+		<script>
+			function C3(a, b){
+			    this.p = a + b;
+			    this.sayP = function(){
+			        console.log(this.p);
+			    }
+			}
+			//我们定义一个函数来覆盖C3原型中的constructor，试图改变属性p的值
+			function fake(){
+			    this.p = 100;
+			}
+			var c3 = new C3(2,3);
+			console.log(C3.prototype);//由于obj.__proto__ = CO.prototype;输出Object { … }
+			console.log(C3.prototype.constructor);//function C3()默认用来指回构造函数对象C3
+			C3.prototype.constructor = fake; //覆盖C3原型中的constructor
+			console.log(C3.prototype.constructor);//function fake()
+			c3.sayP();//5
+		</script>
+
+		<h4>如何创建</h4>
+		<p>1）有内置的构造函数，直接new内置构造函数 </p>
+		<script>
+			var a="123";
+			console.log(typeof a);//基本类型String
+			console.log(typeof(new String(a)));//对象类型（引用类型）Object
+		</script>
+		<p>2)创建普通函数（通常函数首字母大写），用new创建函数对象</p>
+		<script>
+			function C4(a, b){
+				console.log(this===c4);//false
+				console.log(this);//Object {...}在new时被创建的对象
+			    this.p = a + b;
+			    this.sayP = function(){
+			        console.log(this.p);
+			    }
+			}
+			var c4 = new C4(2,3);
+			c4.sayP();
+		</script>
+	</section>
+</body>
+</html>

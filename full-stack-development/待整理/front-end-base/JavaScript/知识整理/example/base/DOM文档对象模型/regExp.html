@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>正则表达式</title>
+	<style>
+		em{
+			color:red;
+			font-size: 18px;
+		}
+		a{
+			text-decoration:none;
+			color:rgba(0,0,255,0.7);
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h3>什么是正则表达式</h3>
+		<h4>1.概念</h4>
+		<p>正则表达式是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为“元字符”），是对字符串执行模式匹配的强大工具，不同的语言实现正则表达式的方法不同，JavaScript采用Perl5做法</p>
+		<h4>2.组成</h4>
+		<pre>
+			①一个用于匹配的模式文本
+			②用0个或多个修饰符（标志）描述的匹配模式的细节
+		</pre>
+		<h4>RegExp对象--JavaScript内置对象</h4>
+		<p>1）属性</p>
+		<pre>
+			①global（默认false），相关搜索在找到第一个匹配位置时就会停止，如果需要找出所有匹配位置，可以将global设置为true----也可以添加其对应的regex修饰符为g
+			②ignoreCase(默认false),搜索是对大小写敏感，如果要执行对大小写不敏感的匹配，可以将属性设置为为true----也可以添加其对应的regex修饰符为i
+			③multiline(默认false),不进行跨行搜索，如果要执行多行匹配，可以将属性设置为为true----也可以添加其对应的regex修饰符为m
+			④lastIndex（默认是0），搜索开始的索引位
+			⑤source：用于存储正则表达式匹配模式的属性
+			<em>注意，regex修饰符一旦被设置，不能在被更改</em>
+		</pre>
+		<p>2）方法</p>
+		<pre>
+			①test(),接受一个参数（字符串），返回true或false
+				使用了g修饰符的正则表达式，表示要记录每一次搜索的位置，接着使用test方法，每次开始搜索的位置都是上一次匹配的后一个位置。
+			②exec(),接受一个参数（字符串），返回一个由匹配字符串组成的数组
+		</pre>
+		<script>
+			var re=/j.*t/gim;
+			re.global=false;
+			console.log(re.global);//true
+			console.log(/j.*t/.test("JavaScript"));//false
+			console.log(/j.*t/i.test("JavaScript"));//true
+			console.log(/j.*t/i.exec("JavaScript"));//Array [ "JavaScript" ]==>["JavaScript", index: 0, input: "JavaScript"]
+		</script>
+	</section>
+	<section>
+		<h3>为什么要使用正则表达式</h3>
+		<p>正则表达式是一种强大的文本搜索和处理的方式，使用正则表达即可以减少判断分支，减少代码量,而且可以使代码易维护</p>
+	</section>
+	<section>
+		<h3>怎么使用正则表达式</h3>
+		<h4>1.创建</h4>
+		<pre>
+			①直接量语法（<em>推荐</em>）：var reg = /pattern/attributes
+			②创建 RegExp 对象的语法 var reg = new RegExp(pattern, attributes);
+			参数说明：
+
+			参数 pattern 是一个字符串，指定了正则表达式的模式或其他正则表达式。
+			参数 attributes 是一个可选的字符串，包含属性 “g”、”i” 和 “m”，分别用于指定全局匹配、区分大小写的匹配和多行匹配。
+			ECMAScript 标准化之前，不支持 m 属性。如果 pattern 是正则表达式，而不是字符串，则必须省略该参数。
+		</pre>
+		<script>
+			var reg1=/j.*a/gim;
+			var reg2=new RegExp("j.*t",'gim');
+			console.log(reg1.source);//j.*a
+		</script>
+		<h4>2.使用</h4>
+		<p>①正则对象的方法（将字符串作为参数）：RegExp对象.方法(字符串)，有两个方法test()和exec()</p>
+		<script>
+			var reg3=/abc/g;
+			var str1="1546sabc45";
+			console.log(reg3.lastIndex);//0
+			console.log(reg3.test(str1));//true
+			console.log(reg3.lastIndex);//8
+			console.log(reg3.test(str1));//false
+
+			var str = "xyz";
+			var reg1 = /x/;
+			var reg2 = /a/;
+			var res1 = reg1.exec(str);
+			var res2 = reg2.exec(str);
+			console.log(res1);//Array [ "x" ]==>["x", index: 0, input: "xyz"]
+			console.log(res2);//null
+		</script>
+		<p>②字符串对象的方法<em>推荐</em>（将正则表达式作为参数）：字符串.方法(RegExp对象)，有search(),match(),replace(),split()</p>
+<pre>
+    ①search() 方法用于检索字符串中指定的子字符串，或检索与正则表达式相匹配的子字符串。返回值： stringObject 中第一个与 regexp 相匹配的子串的起始位置。
+    	注释：如果没有找到任何匹配的子串，则返回 -1。
+
+    	search() 方法不执行全局匹配，它将忽略标志 g。它同时忽略 regexp 的 lastIndex 属性，并且总是从字符串的开始进行检索，这意味着它总是返回 stringObject 的第一个匹配的位置。
+
+    ②match() 方法可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。该方法类似 indexOf() 和 lastIndexOf()，但是它返回指定的值，而不是字符串的位置。
+    	字符串对象的match方法与正则对象的exec方法比较类似：
+    	但是如果正则表达式带有g修饰符，那么match方法与exec方法就有差别了:
+    	match返回了所有成功匹配的结果，但是exec方法只返回了一个。 
+
+    ③replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。
+    返回值：一个新的字符串，是用 replacement 替换了 regexp 的第一次匹配或所有匹配之后得到的。
+		replace("被替换的","替换的");对于替换的字符串，可以使用<em>$&修饰符</em>只有当regexp 具有全局标志 g，那么 replace() 方法将替换所有匹配的子串。否则，它只替换第一个匹配子串。
+	
+	④split(‘字符串的分割正则','返回数组的最大成员数')；返回分割后各部分组成的数组 
+
+</pre>
+		<script>
+			var str = "abcdcef";
+			//search()
+			console.log(str.search("c"));//2
+			console.log(str.search(/c/g));//2
+
+			//match()
+			console.log(str.match("c"));//Array [ "c" ]
+			console.log(str.match(/c/));//Array [ "c" ]
+			console.log(str.match(/c/g));//Array [ "c", "c" ]
+			console.log(/c/g.exec(str));//Array [ "c" ]
+
+			//replace()
+			console.log(str.replace("c","h"));//abhdcef
+			console.log(str.replace(/c/,"h"));//abhdcef
+			console.log(str.replace(/c/g,"h"));//abhdhef
+			console.log(str.replace(/c/g,"-$&"));//ab-cd-cef
+			console.log(str.replace(/(ab)(cd)(cef)/g,"$2-"));//cd-
+			console.log(str.replace(/(abcd)(cef)/,'$2$1'));//cefabcd
+			console.log(str.replace(/c/g,"$`"));//ababdabcdef
+			console.log(str.replace(/c/g,"$'"));//abdcefdefef
+			console.log(str.replace(/c/g,"$$"));//ab$d$ef
+
+			//split()
+			var str2="a,b , c,,d,x@@xx@xx@@";
+			////以逗号来分割字符串
+			console.log(str2.split(","));//Array [ "a", "b ", " c", "", "d", "x@@xx@xx@@" ]
+			//以逗号来分割字符串,返回的数组最大数为3
+			console.log(str2.split(",",3));//Array [ "a", "b ", " c" ]
+			//以0或多个逗号来分割字符串
+			console.log(str2.split(/,*/));//Array [ "a", "b", " ", " ", "c", "d", "x", "@", "@", "x", 等 6 项… ]
+			//以0或多个逗号来分割字符串,返回的数组最大数为3
+			console.log(str2.split(/,*/,3));//Array [ "a", "b", " " ]
+			//以0或多个x来分割字符串
+			console.log(str2.split(/x*/));//Array [ "a", ",", "b", " ", ",", " ", "c", ",", ",", "d", 等 6 项… ]
+			//以0或多个x来分割字符串,返回的数组最大数为3
+			console.log(str2.split(/x*/,3));//Array [ "a", ",", "b" ]
+			//以0或多个x来分割字符串,由于加了括号匹配的部分也就是分割规则也会作为数组成员返回
+			console.log(str2.split(/(x*)/));//Array [ "a", "", ",", "", "b", "", " ", "", ",", "", 等 21 项… ]
+		</script>
+		<h4>3.常用</h4>
+		<p>1）验证，用于验证时，<em>通常</em>需要在前后分别加上^和$，以匹配整个待验证字符串</p>
+		<p>2）搜索替换，搜索/替换时是否加上此限定则根据搜索的要求而定(也有可能要在前后加上\b而不是^和$)</p>
+		<pre>
+		正浮点数，最多保留小数点后两位，不允许是0，0.0,0.00
+		/(^[1-9]{1}\d*(.\d{1,2})?$)|(^[0]{1}(.[1-9]{1}\d{0,1})$)|(^[0]{1}(.[0]{1}[1-9]{1})$)/
+		①字符类匹配
+
+			[…] 查找方括号之间的任何字符
+			[^…] 查找任何不在方括号之间的字符
+			[a-z] 查找任何从小写 a 到小写 z 的字符
+			[A-Z] 查找任何从大写 A 到大写 Z 的字符
+			[A-z] 查找任何从大写 A 到小写 z 的字符
+			. 查找单个字符，除了换行和行结束符
+			\w 查找单词字符，等价于[a-zA-Z0-9]
+			\W 查找非单词字符，等价于[^a-zA-Z0-9]
+			\s 查找空白字符
+			\S 查找非空白字符
+			\d 查找数字，等价于[0-9]
+			\D 查找非数字字符，等价于[^0-9]
+			\b 匹配单词边界
+			\r 查找回车符
+			\t 查找制表符
+			\0 查找 NULL 字符
+			\n 查找换行符
+
+		②重复字符匹配
+
+			{n,m} 匹配前一项至少n次，但不能超过m次
+			{n,} 匹配前一项n次或更多次
+			{n} 匹配前一项n次
+			 n？ 匹配前一项0次或者1次，也就是说前一项是可选的，等价于{0，1}
+			 n+ 匹配前一项1次或多次，等价于{1，}
+			 n* 匹配前一项0次或多次，等价于{0，}
+			 n$ 匹配任何结尾为 n 的字符串
+			^n 匹配任何开头为 n 的字符串
+			?=n 匹配任何其后紧接指定字符串 n 的字符串
+			?!n 匹配任何其后没有紧接指定字符串 n 的字符串
+
+		③匹配特定数字
+
+			^[1-9]\d*$　 　 匹配正整数
+			^-[1-9]\d*$ 　 匹配负整数
+			^-?[0-9]\d*$　　 匹配整数
+			^[1-9]\d*|0$　 匹配非负整数（正整数 + 0）
+			^-[1-9]\d*|0$　　 匹配非正整数（负整数 + 0）
+			^[1-9]\d*.\d*|0.\d*[1-9]\d*$　　匹配正浮点数
+			^-([1-9]\d*.\d*|0.\d*[1-9]\d*)$　匹配负浮点数
+			^-?([1-9]\d*.\d*|0.\d*[1-9]\d*|0?.0+|0)$　 匹配浮点数
+			^[1-9]\d*.\d*|0.\d*[1-9]\d*|0?.0+|0$　　 匹配非负浮点数（正浮点数 + 0）
+			^(-([1-9]\d*.\d*|0.\d*[1-9]\d*))|0?.0+|0$　　匹配非正浮点数（负浮点数 + 0）
+
+		④匹配特定字符串
+
+			^[A-Za-z]+$　　匹配由26个英文字母组成的字符串
+			^[A-Z]+$　　匹配由26个英文字母的大写组成的字符串
+			^[a-z]+$　　匹配由26个英文字母的小写组成的字符串
+			^[A-Za-z0-9]+$　　匹配由数字和26个英文字母组成的字符串
+			^\w+$　　匹配由数字、26个英文字母或者下划线组成的字符串
+
+		<em>⑥应用：</em>
+			匹配<em>帐号</em>是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^[a-zA-Z][a-zA-Z0-9_]{4,15}$ 表单验证时很实用
+
+			<em>用户名</em>正则（只能是中文，英文，数字，下划线，4-16个字符）: /^[\u4E00-\u9FA5\uf900-\ufa2d\w]{4,16}$/
+
+			匹配<em>Email</em>地址：/^([a-zA-Z_0-9-])+@([a-zA-Z_0-9-])+(.[a-zA-Z_0-9-])+$/
+				邮箱的规则是: 由3部分组成
+					由1个或者多个字母数字下划线和杠 + @ + 1个或者多个字母数字下划线和杠 + . + 1个或者多个字母数字下划线和杠
+			
+			匹配网址<em>URL</em>：[a-zA-z]+://[^\s]*
+
+			判断字符串是不是由数字组成: /^\d*$/
+
+			验证日期格式:/^\d{4}[-\/]\d{1,2}[-\/]\d{1,2}$/
+				日期格式有2种 第一种是yyyy-mm-dd 或 yyyy/mm/dd
+
+
+			匹配国内电话号码：\d{3}-\d{8}|\d{4}-\d{7} 如 0511-4405222 或 021-87888822
+			匹配QQ号：[1-9][0-9]{4,} 从10000开始
+			邮政编码：[1-9]\d{5}(?!\d) 邮政编码为6位数字
+			匹配身份证：/^(\d{14}|\d{17})(\d|[xX])$/
+				匹配规则：身份证号码有15位或者18位，其中最后一位可能是X，其他全是数字
+			匹配ip地址：\d+.\d+.\d+.\d+
+			匹配中文字符： /[\u4E00-\u9FA5\uf900-\ufa2d]/
+			
+
+
+
+
+
+		</pre>
+		
+	</section>
+</body>
+</html>
