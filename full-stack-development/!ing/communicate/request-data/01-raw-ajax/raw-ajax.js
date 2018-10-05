@@ -1,13 +1,13 @@
 /**
  *@desc 封装原生ajax
- * @params {Object} options
+ *@params {Object} options
  * type {String} GET,POST,
  * url {String},
  * async {Boolean} default:true,
  * data {Objcet},
- *header {Object},
+ * header {Object},
  * success {Function} ajax请求成功时调用
- *error{Function} ajax请求失败时调用
+ * error{Function} ajax请求失败时调用
  */
 
 
