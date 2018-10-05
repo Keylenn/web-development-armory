@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原生ajax</title>
+    <style>
+        .raw-ajax-post input{
+            display: block;
+            margin-bottom: .5em;
+        }
+    </style>
+</head>
+<body>
+    <section class="raw-ajax-get">
+        <p id="name">name</p>
+        <p id="age">age</p>
+    </section>
+    <section class="raw-ajax-post">
+        <form id='rawAjaxPost' name='raw-ajax-post' >
+            <input type='text' name='username' placeholder="请输入用户名" required>
+            <input type='email' name='email' placeholder="请输入邮箱" required>
+            <input type='submit' onclick='return handleSubmitForm(this.form);'>
+        </form>
+    </section>
+    <script src="./raw-ajax.js"></script>
+    <script>
+        ajax({
+            type: "get",
+            url: "https://easy-mock.com/mock/5bb706705ace236d42c732b1/ajax/raw-ajax-get",
+            async: true,
+            success:function(data){
+                console.info('get_paramsData',data)
+                let name = document.querySelector("#name"),
+                    age = document.querySelector("#age");
+                name.innerHTML = data.name;
+                age.innerHTML = data.age;
+            }
+        })
+       function handleSubmitForm(form){
+           ajax({
+               type: "post",
+               url: "https://easy-mock.com/mock/5bb706705ace236d42c732b1/ajax/raw-ajax-post",
+               async: true,
+               data: form,
+               success:function(data){
+                   console.info('post_formData',data)
+               }
+           })
+           return false;
+       }
+        ajax({
+            type: "post",
+            url: "https://easy-mock.com/mock/5bb706705ace236d42c732b1/ajax/raw-ajax-post",
+            async: true,
+            data:{
+                name:'小红',
+                age:19
+            },
+            success:function(data){
+                console.info('post_paramsData',data)
+            }
+        })
+    </script>
+</body>
+</html>
